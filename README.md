@@ -40,7 +40,7 @@ Update later with `pi update git:github.com/andhikapraa/pi-setup-public`, or
 | `btw` | `/btw <question>`: side questions that reuse the main prompt cache and never enter the transcript. Bare `/btw` browses saved ones. |
 | `retry` | `/retry` resumes a failed or aborted turn; `/regen` reruns the last prompt (asks first if the turn changed files). |
 | `git-ai` | Records Pi edits in [git-ai](https://usegitai.com) checkpoints when git-ai is installed. |
-| `keyring-env` | Loads keys that extensions read from env vars (pi-exa's `EXA_API_KEY`) from the OS keyring into Pi's own process, so they work however Pi is launched. |
+| `keyring-env` | Loads keys that tools read from env vars (pi-exa's `EXA_API_KEY`, the dokploy ext's `DOKPLOY_INSTANCES`) from the OS keyring into Pi's own process, so they work however Pi is launched. |
 | `agents-md` | Adds this setup's `AGENTS.md` (working rules: keep changes small, questions are read-only, ask before external or destructive actions, no secrets in files) to every session. Your own `~/.pi/agent/AGENTS.md` and project `AGENTS.md` files load after it and win where they differ. Disable it with `pi config` if you'd rather not have it. |
 | `mcp-adapter-rpc` | Loads pi-mcp-adapter so its project-server approval prompt can't block Pi's startup in RPC mode. Without this, Pi exits with code 0 in projects whose `.mcp.json` has unapproved servers. |
 
@@ -86,7 +86,7 @@ Each `ext/<name>/` can hold skills, extensions, and a pinned `packages.txt`.
 | `google` | `gcloud`, Google developer docs lookup, Google skill finder | |
 | `mobile` | `android-cli`, `android-rooted-avd`, `ios-device-qa` | Android SDK / Xcode |
 | `video` | `watch`: analyze YouTube or local videos | yt-dlp, ffmpeg |
-| `dokploy` | Dokploy infrastructure through the `dokploy` CLI | A Dokploy instance |
+| `dokploy` | Dokploy infrastructure through the `dokploy` CLI (run via `npx dokploy-kit` if not installed) | A Dokploy instance and API key (see Ext configuration) |
 | `fallow` | Fallow codebase analysis for TS/JS (pi-fallow) | |
 | `firecrawl` | Firecrawl scraping, crawling, and research-paper search | A Firecrawl API key |
 | `trello` | Trello through the trelly CLI and MCP server | |
@@ -113,6 +113,22 @@ secret-tool store --label "Hindsight" service hindsight
 ```
 
 ### Ext configuration
+
+- **dokploy:** create a key in Dokploy under Settings → API Keys, then store your instances as one
+  JSON array in the keyring item `dokploy-instances`; `keyring-env` exposes it to Pi as
+  `DOKPLOY_INSTANCES`. The first entry is the default; name others with `--instance NAME`. For
+  `baseUrl`, use your Dokploy URL ending in `/api`.
+
+  ```bash
+  # macOS: -w with no value prompts for it; paste the JSON
+  security add-generic-password -s dokploy-instances -a "$USER" -w
+  # Linux
+  secret-tool store --label "Dokploy" service dokploy-instances
+  # value: [{"name":"main","baseUrl":"https://dokploy.example.com/api","apiKey":"..."}]
+  ```
+
+  Like every key `keyring-env` loads, it is visible to commands Pi runs. Use a key scoped to what
+  you want the agent to manage.
 
 - **axon:** setup asks for your AxonHub base URL (or reads `AXON_BASE_URL`). Change it later
   with `/axon-config`. Until a URL is set, the extension only offers `/axon-config`.

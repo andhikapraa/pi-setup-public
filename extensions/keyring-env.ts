@@ -13,7 +13,11 @@ import type { ExtensionAPI } from "@earendil-works/pi-coding-agent";
  *   macOS:  security add-generic-password -s <service> -a "$USER" -w
  *   Linux:  secret-tool store --label <name> service <service>
  */
-const KEYS: ReadonlyArray<{ env: string; service: string }> = [{ env: "EXA_API_KEY", service: "exa-api" }];
+const KEYS: ReadonlyArray<{ env: string; service: string }> = [
+	{ env: "EXA_API_KEY", service: "exa-api" },
+	// JSON array of {name, baseUrl, apiKey}: the dokploy CLI's multi-instance form (dokploy ext).
+	{ env: "DOKPLOY_INSTANCES", service: "dokploy-instances" },
+];
 
 /** Read one secret from the OS keyring; undefined when absent or unsupported. */
 function readKeyring(service: string): string | undefined {
