@@ -47,9 +47,10 @@ Update later with `pi update git:github.com/andhikapraa/pi-setup-public`, or
 **Skills** (`skills/`): `review`, `qa`, `smart-explore`, `learn-codebase`, `make-plan`,
 `prototype`, `file-pr`, `babysit-pr`, `web-research`, `browser-automation`, `writing-for-agents`,
 `domain-modeling`, `no-ai-slop`, the planning set (`wayfinder`, `program`, `do`, `project-init`,
-`teach`), and `html-communication` / `postplan-read` for shareable [Postplan](https://www.npmjs.com/package/postplan) HTML.
+`teach`), and `html-communication` / `postplan-read` for shareable [Postplan](https://www.npmjs.com/package/postplan) HTML
+(anonymous uploads through `npx postplan`, no account needed).
 
-Most skills need nothing beyond Pi and the core packages. These need an outside tool or account,
+Most skills need nothing beyond Pi and the core packages. These need an outside tool or key,
 which setup does not install:
 
 | Skill | Needs | Without it |
@@ -57,7 +58,6 @@ which setup does not install:
 | `browser-automation` | [agent-browser](https://agent-browser.dev) (`brew install agent-browser` or `npm i -g agent-browser`); [chrome-use](https://github.com/leeguooooo/chrome-use) only for CAPTCHA or your real Chrome session | No browser work |
 | `qa`, and `web-perf` (frontend ext) | `browser-automation` and its tools above | `qa` can't drive the app; `web-perf` still runs Lighthouse if the project has it |
 | `file-pr`, `babysit-pr` | [GitHub CLI](https://cli.github.com) (`gh`), signed in with `gh auth login` | Can't read or open PRs |
-| `html-communication` | A Postplan account: `npx postplan auth login` once | Can write the HTML, can't upload it |
 | `web-research` | An Exa API key (see Credentials); uses Context7 and the `firecrawl` ext too when present | Falls back to Context7 and direct reads |
 
 Skills that use an ext (for example `prototype` uses `impeccable` from `frontend`) say so and
