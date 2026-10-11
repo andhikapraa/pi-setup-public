@@ -1,0 +1,2 @@
+# Pinned Pi packages for this ext. Same format as ../../packages.txt.
+git:github.com/andhikapraa/pi-firecrawl@b306f92694369b93d4f3bf2600fbcfbb1f6164da

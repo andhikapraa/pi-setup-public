@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "policy": {
+    "bundledBinaries": false,
+    "downloadCondition": "Only during an explicit rooted-emulator request.",
+    "downloadLocation": "Task-scoped temporary directory outside the OMP package.",
+    "verification": "Require exact byte size and SHA-256 before extraction or installation.",
+    "updateRule": "Do not change versions or URLs without re-reading upstream release metadata and recomputing SHA-256."
+  },
+  "artifacts": [
+    {
+      "id": "rootavd",
+      "kind": "source-archive",
+      "version": "commit-613caa44371f85e1a461bc030e07ddc2d71afe32",
+      "repository": "https://gitlab.com/newbit/rootAVD",
+      "url": "https://gitlab.com/newbit/rootAVD/-/archive/613caa44371f85e1a461bc030e07ddc2d71afe32/rootAVD-613caa44371f85e1a461bc030e07ddc2d71afe32.tar.gz",
+      "bytes": 11143647,
+      "sha256": "7f4bf6478ef58a7dbd017f01acad7b58985d2b7b87915475a907a7da62052401",
+      "license": "GPL-3.0",
+      "licenseUrl": "https://gitlab.com/newbit/rootAVD/-/blob/613caa44371f85e1a461bc030e07ddc2d71afe32/LICENSE",
+      "redistribute": false
+    },
+    {
+      "id": "rezygisk",
+      "kind": "magisk-module",
+      "version": "v1.0.0-rc.1",
+      "repository": "https://github.com/PerformanC/ReZygisk",
+      "url": "https://github.com/PerformanC/ReZygisk/releases/download/v1.0.0-rc.1/ReZygisk-v1.0.0-rc.1-release.zip",
+      "bytes": 290238,
+      "sha256": "d47aa72d1c23734e274d627774598c72a8f1d248d1a4aa15f939b6cd9f5713f6",
+      "license": "GPL-3.0",
+      "licenseUrl": "https://github.com/PerformanC/ReZygisk/blob/v1.0.0-rc.1/LICENSE",
+      "redistribute": false
+    },
+    {
+      "id": "tricky-store",
+      "kind": "magisk-module",
+      "version": "1.4.1",
+      "repository": "https://github.com/5ec1cff/TrickyStore",
+      "url": "https://github.com/5ec1cff/TrickyStore/releases/download/1.4.1/Tricky-Store-v1.4.1-245-72b2e84-release.zip",
+      "bytes": 2840600,
+      "sha256": "2f5e73fcba0e4e43b6e96b38f333cbe394873e3a81cf8fe1b831c2fbd6c46ea9",
+      "license": null,
+      "licenseStatus": "No license file observed at the pinned upstream repository. Metadata only; do not redistribute.",
+      "redistribute": false
+    },
+    {
+      "id": "ksu-webui-standalone",
+      "kind": "apk",
+      "version": "v1.0",
+      "repository": "https://github.com/5ec1cff/KsuWebUIStandalone",
+      "url": "https://github.com/5ec1cff/KsuWebUIStandalone/releases/download/v1.0/KsuWebUI-1.0-34-release.apk",
+      "bytes": 1703779,
+      "sha256": "a99e9a66c79d94db7cc5cf0c12607df1790215423e3d917c937dc16093c8135d",
+      "license": "GPL-3.0",
+      "licenseUrl": "https://github.com/5ec1cff/KsuWebUIStandalone/blob/v1.0/LICENSE",
+      "redistribute": false
+    },
+    {
+      "id": "strong-integrity-fix",
+      "kind": "magisk-module",
+      "version": "v10.0.21",
+      "repository": "https://github.com/sarhan00/Strong-Integrity-Fix",
+      "url": "https://github.com/sarhan00/Strong-Integrity-Fix/releases/download/v10.0.21/Play.Integrity.Fix.-.Strong.Integrity.-v10.0.21.zip",
+      "bytes": 295864,
+      "sha256": "3a88813a2cd740ecd7876a6259b1b030b8c33a229f4aca44cb53bcd0be6e370a",
+      "license": null,
+      "licenseStatus": "No license file observed at the pinned upstream repository. Metadata only; do not redistribute.",
+      "redistribute": false
+    }
+  ]
+}

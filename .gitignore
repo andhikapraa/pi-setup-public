@@ -1,0 +1,8 @@
+node_modules/
+__pycache__/
+*.pyc
+.DS_Store
+# Platform renderer for omp-compaction, downloaded by setup.sh
+extensions/omp-compaction/native/
+.native-download-*/
+package-lock.json

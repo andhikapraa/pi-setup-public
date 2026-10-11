@@ -1,0 +1,9 @@
+# Third-party Pi packages installed by setup.sh, pinned to verified versions.
+# One `pi install` source per line. Git sources must pin a full 40-char commit SHA
+# (short SHAs can't be fetched when Pi updates the checkout).
+npm:context-mode@1.0.169
+npm:pi-exa@0.6.1
+npm:@upstash/context7-pi@0.1.2
+npm:@henryqw/pi-ask-question@2.0.5
+npm:pi-subagents@0.75.0
+npm:pi-mcp-adapter@5.0.0

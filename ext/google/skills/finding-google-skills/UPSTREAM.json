@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "repository": "https://github.com/google/skills",
+  "commit": "a7123f80525a4438bc9601d7d6511dfde674b620",
+  "sourcePath": "skills/developers/finding-google-skills/SKILL.md",
+  "sourceBlobSha": "50cd664a3be71825ab19e1ae647882633e0a23ec",
+  "sourceSha256": "d2045fdbaeb6dfa54f43462e83729b374754a5e9f7c2ff2208528c5358943077",
+  "installedAt": "2026-08-31",
+  "mode": "adapted",
+  "license": "Apache-2.0",
+  "licenseFile": "LICENSE",
+  "adaptation": "Replace raw curl/wget catalog retrieval with OMP-native GitHub file reads and context-mode filtering; prohibit automatic catalog installation or persistence.",
+  "localChanges": "Further adapted for Pi in pi-setup after the OMP adaptation above; see git history."
+}

@@ -1,0 +1,26 @@
+{
+  "name": "pi-axon-ext",
+  "version": "0.3.0-pi.0",
+  "description": "AxonHub provider and management extension for Pi.",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "axon",
+    "axonhub",
+    "openai-responses"
+  ],
+  "type": "module",
+  "pi": {
+    "name": "Axon",
+    "extensions": [
+      "./src/index.ts"
+    ]
+  },
+  "dependencies": {
+    "zod": "^4"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-ai": "^0.87.1",
+    "@earendil-works/pi-coding-agent": "^0.87.1"
+  }
+}

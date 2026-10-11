@@ -1,0 +1,10 @@
+{
+  "repository": "https://github.com/bradautomates/claude-video.git",
+  "tag": "v0.2.0",
+  "commit": "83da59fa78c3eee9e20f515fe75c438bb5166efd",
+  "upstreamSkillTree": "a998b18e29c46ecc7d08c4aad90db1cdd757cc7d",
+  "releaseAsset": "watch.skill",
+  "releaseAssetSha256": "e889b727724f0ff3fef9a72c4561f38065b81f4eb61b36b3d38710d934043c8f",
+  "installedAt": "2026-07-28T16:23:19Z",
+  "adaptation": "OMP-native tools, bounded context, no automatic installs, no API transcription, no plaintext secrets"
+}

@@ -1,0 +1,10 @@
+{
+  "repository": "https://github.com/mattpocock/skills",
+  "commit": "2ab958093e83e0ec752e6c1c5932da465bf23e0c",
+  "upstreamSkills": [
+    "skills/engineering/setup-matt-pocock-skills"
+  ],
+  "installedAt": "2026-07-30",
+  "adaptation": "OMP-native project initialization for greenfield, repository adoption, and brownfield rewrite modes. Replaces Claude/root-context mutation and mandatory docs/agents tracker configuration with `.omp/PROJECT.md`, a bounded `.omp/AGENTS.md` pointer block, detect-first issue workflow recording, `.scratch` fallback, mapped brownfield learning, preservation contracts, one approval gate, and routing to wayfinder/program.",
+  "localChanges": "Further adapted for Pi in pi-setup after the OMP adaptation above; see git history."
+}

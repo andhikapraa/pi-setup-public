@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "releaseGuard": "The consuming app target must depend on DebugBridge products with .when(configuration: .debug); Release verification must build and inspect the app binary for DebugBridge symbols.",
+  "files": {
+    "templates/Package.swift.template": "DebugBridge/Package.swift",
+    "templates/StateServer.swift.template": "DebugBridge/Sources/DebugBridgeCore/StateServer.swift",
+    "templates/DebugBridgeManager.swift.template": "DebugBridge/Sources/DebugBridgeCore/DebugBridgeManager.swift",
+    "templates/Snapshotable.swift.template": "DebugBridge/Sources/DebugBridgeCore/Snapshotable.swift",
+    "templates/Bridges.swift.template": "DebugBridge/Sources/DebugBridgeUI/Bridges.swift",
+    "templates/DebugOverlay.swift.template": "DebugBridge/Sources/DebugBridgeUI/DebugOverlay.swift",
+    "templates/DebugBridgeTouch.h.template": "DebugBridge/Sources/DebugBridgeTouch/include/DebugBridgeTouch.h",
+    "templates/DebugBridgeTouch.m.template": "DebugBridge/Sources/DebugBridgeTouch/DebugBridgeTouch.m",
+    "templates/DebugBridgeWiring.swift.template": "APP_SOURCE/DebugBridgeWiring.swift",
+    "templates/StateAccessor.swift.template": "generator input template; generated output is APP_SOURCE/DebugBridgeGenerated/StateAccessor.swift"
+  },
+  "licenses": {
+    "LICENSE": "native workflow and bridge assets",
+    "KIF-LICENSE": "KIF-derived Objective-C touch synthesis"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "repository": "https://github.com/mattpocock/skills",
+  "commit": "2ab958093e83e0ec752e6c1c5932da465bf23e0c",
+  "upstreamSkills": [
+    "skills/engineering/wayfinder"
+  ],
+  "installedAt": "2026-07-28",
+  "adaptation": "OMP-native decision mapping with durable tracker-or-.scratch state and handoff to program",
+  "localChanges": "Further adapted for Pi in pi-setup after the OMP adaptation above; see git history."
+}

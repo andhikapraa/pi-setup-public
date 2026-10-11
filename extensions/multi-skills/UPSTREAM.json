@@ -1,0 +1,14 @@
+{
+  "package": "pi-multi-skills",
+  "version": "1.2.1",
+  "repository": "https://github.com/QuangThai/pi-multi-skills",
+  "license": "MIT",
+  "localChanges": [
+    "Trigger changed from `$skill-name` to OMP-style mid-prompt `/skill:name`: parser.ts token scan and getSkillCompletionPrefix rewritten; tokens must start a word so paths like docs/skill:x don't match",
+    "index.ts: autocomplete only takes over for a `/` with text before it, offers prefix matches, and inserts `/skill:name ` in place; a leading `/` keeps Pi's command menu",
+    "index.ts: skip expansion when the prompt starts with '/', so Pi's native /skill: and other commands still run",
+    "index.ts trimmed: removed Loaded-skills notify, Skills widget, /skills and /skills-search commands",
+    "resolver.ts: removed formatSkillTable (only used by the removed /skills command)",
+    "Menu opening on a mid-line `/` lives in ../input-bar.ts (InputBarEditor.handleInput), since Pi's editor only auto-opens on a leading `/`"
+  ]
+}

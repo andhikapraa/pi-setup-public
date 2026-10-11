@@ -1,0 +1,2 @@
+# Pinned Pi packages for this ext. Same format as ../../packages.txt.
+git:github.com/andhikapraa/pi-hindsight@3935994e79fb3f488d54276c3687c44237e17780

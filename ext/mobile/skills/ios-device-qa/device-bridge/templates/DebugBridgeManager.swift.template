@@ -1,0 +1,31 @@
+// AUTO-GENERATED from the skill-local templates/DebugBridgeManager.swift.template
+//
+// Bootstraps StateServer on app launch. Lives in DebugBridgeCore (no UIKit
+// dependency). The DebugOverlay install is wired separately by the consuming
+// app — it lives in DebugBridgeUI which depends on DebugBridgeCore (not the
+// other way around). Everything is #if DEBUG-gated; this file does not exist
+// in Release builds.
+
+#if !DEBUG
+#error("DebugBridgeCore must not compile in a Release build")
+#endif
+
+#if DEBUG
+
+import Foundation
+
+@MainActor
+public final class DebugBridgeManager {
+    public static let shared = DebugBridgeManager()
+
+    private var started = false
+
+    public func start(registerAccessors: () -> Void) {
+        guard !started else { return }
+        registerAccessors()
+        StateServer.shared.start()
+        started = true
+    }
+}
+
+#endif // DEBUG

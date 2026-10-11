@@ -1,0 +1,19 @@
+// AUTO-GENERATED from the skill-local templates/Snapshotable.swift.template
+// Marker wrapper for mutable state included in DebugBridge snapshots.
+
+#if !DEBUG
+#error("DebugBridgeCore must not compile in a Release build")
+#endif
+
+#if DEBUG
+
+@propertyWrapper
+public struct Snapshotable<Value> {
+    public var wrappedValue: Value
+
+    public init(wrappedValue: Value) {
+        self.wrappedValue = wrappedValue
+    }
+}
+
+#endif // DEBUG

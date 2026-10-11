@@ -1,0 +1,30 @@
+{
+  "source": "oh-my-pi (can1357/oh-my-pi)",
+  "version": "18.1.16",
+  "license": "MIT",
+  "copiedFrom": "npm @oh-my-pi/* 18.1.16 (pi-agent-core, pi-coding-agent, snapcompact, pi-utils, pi-catalog)",
+  "files": {
+    "snapcompact/snapcompact.ts": "snapcompact/src/snapcompact.ts (edits marked `PI PORT:`)",
+    "snapcompact/identity.ts": "pi-catalog compat/revision.ts + reduced classifyModel",
+    "snapcompact/run.ts": "pi-coding-agent session-maintenance.ts snapcompact host checks",
+    "native/": "not committed; setup downloads @oh-my-pi/pi-natives-<platform>@18.1.16 (darwin-arm64, linux-x64 baseline/modern) from npm",
+    "vendor/template.ts": "pi-utils/src/template.ts (verbatim)",
+    "vendor/path-tree.ts": "pi-utils/src/path-tree.ts (verbatim)",
+    "vendor/prompt.ts": "pi-utils prompt.render subset",
+    "shake.ts": "pi-agent-core compaction/shake.ts + tool-protection.ts + session-maintenance.ts shake orchestration",
+    "methods.ts": "pi-coding-agent session/compact-modes.ts + compaction-methods.ts",
+    "handoff.ts": "pi-agent-core compaction.ts handoff + session-handoff.ts",
+    "prompts.ts": "pi-agent-core compaction/prompts/handoff-*.md (verbatim)",
+    "rebuild.ts": "pi-agent-core compaction/messages.ts compactionSummary → model input",
+    "soft.ts": "soft = Pi built-in summarizer; only snapcompact-archive migration + file-list merge ported"
+  },
+  "localChanges": [
+    "remote: unsupported on Pi (no provider-native compaction transport); /compact remote notifies and falls back to soft",
+    "soft: uses Pi's own summary prompt/format instead of OMP's prompts; OMP's short summary and fold-window summarization not ported",
+    "Pi runs /compact itself; modes are parsed from customInstructions in session_before_compact",
+    "/handoff commits through Pi's ctx.compact, which aborts a running turn first (OMP does not)",
+    "shake persists through Pi context_edit entries; originals saved to <sessionDir>/omp-shake/*.md and recovered with read, not artifact://",
+    "auto shake that frees enough context cancels Pi's compaction (shows as cancelled); on overflow it always continues to the next method so the turn is retried",
+    "no idle or incomplete-output triggers, no speculative pre-threshold compaction: Pi has no hooks for them"
+  ]
+}

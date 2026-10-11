@@ -1,0 +1,10 @@
+{
+  "repository": "https://github.com/andhikapraa/dokploy-kit.git",
+  "commit": "0873a4bd86d1143e13521af3a7a8de951bc8b4e3",
+  "upstreamSkill": "skills/dokploy",
+  "vendoredAt": "2026-07-29",
+  "adaptation": "Complete dereferenced portable copy; destructive-operation confirmation and single-execution fallback safety retained",
+  "localChanges": [
+    "Owner-specific example instance name replaced with \"prod\""
+  ]
+}

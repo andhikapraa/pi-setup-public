@@ -1,0 +1,14 @@
+{
+  "repository": "https://github.com/cloudflare/skills",
+  "sourceCommit": "f96bff754e428838818017f75817f0f9428acd48",
+  "sourceFile": "skills/wrangler/SKILL.md",
+  "sourceFileLastChangedCommit": "8c01b03b0a09a01581beed87b656cf634009e735",
+  "sourceFileLastChangedAt": "2026-04-22T18:05:21Z",
+  "sourceSha256": "42abe11ba6c0cb0c135deed1d591d844838fe0b61fc8c6d675a832435508a61b",
+  "license": "Apache-2.0",
+  "licenseSha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+  "observedWranglerVersion": "4.127.1",
+  "observedWranglerPublishedAt": "2026-08-28T14:52:53.481Z",
+  "vendoredAt": "2026-08-29",
+  "adaptation": "Preserve Cloudflare's current command and configuration reference while enforcing OMP repository-local version resolution, explicit dependency and remote-mutation authorization, secret-safe command handling, the programmatic DNS prohibition, and OMP-owned skill updates."
+}

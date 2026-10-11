@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "repository": "https://github.com/google/skills",
+  "commit": "a7123f80525a4438bc9601d7d6511dfde674b620",
+  "sourcePath": "skills/cloud/gcloud/SKILL.md",
+  "sourceBlobSha": "0d3a1846a426c722f860d44346e4607f2548f0d5",
+  "sourceSha256": "b9c799dd8ca9a46882de18ea29fd02766bb3d9d520d96f037fdc8f6200e40272",
+  "installedAt": "2026-08-31",
+  "mode": "adapted",
+  "license": "Apache-2.0",
+  "licenseFile": "LICENSE",
+  "adaptation": "Preserve mandatory leaf-command help, output reduction, explicit project/location scope, and mutation guardrails; add OMP production, DNS, credential-storage, and profile-scoped MCP boundaries.",
+  "localChanges": "Further adapted for Pi in pi-setup after the OMP adaptation above; see git history."
+}

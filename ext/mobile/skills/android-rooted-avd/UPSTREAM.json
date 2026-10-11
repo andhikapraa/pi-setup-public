@@ -1,0 +1,9 @@
+{
+  "derivedFrom": {
+    "path": "claude:user/skills/android-avd",
+    "sha256": "7acbeca9d0c3c6d10e5606d5249cee20edc699c0ba51c584e0b0483c29d58dd4"
+  },
+  "artifactManifest": "artifacts.json",
+  "updatedAt": "2026-08-30",
+  "adaptation": "Extract only the explicit rooted-emulator laboratory workflow, require disposable targets and recoverable ramdisk backups, remove bundled binaries and hard-coded device identities or keyboxes, and verify every task-scoped upstream download against pinned provenance."
+}

@@ -1,0 +1,11 @@
+{
+  "name": "ios-device-qa",
+  "version": "1.1.0",
+  "sources": [
+    "gstack ios-qa lifecycle workflow v1.0.0",
+    "gstack ios-qa device bridge assets v1.0.0",
+    "KIF touch synthesis subset from https://github.com/kif-framework/KIF"
+  ],
+  "licenses": ["MIT", "Apache-2.0 (KIF-LICENSE)"],
+  "adaptation": "OMP-native single lifecycle skill with qa, review, fix, sync, and cleanup modes; security-hardened token/session handling; project-local runtime state and Release symbol verification"
+}

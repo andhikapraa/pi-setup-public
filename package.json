@@ -1,0 +1,33 @@
+{
+  "name": "pi-setup",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Portable Pi setup: OMP-style extensions (compaction, /btw, /retry, input bar, turn stats, mid-prompt skills), coding skills, and subagent definitions.",
+  "keywords": ["pi-package"],
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "postinstall": "node scripts/fetch-native.mjs"
+  },
+  "pi": {
+    "extensions": [
+      "./extensions/keyring-env.ts",
+      "./extensions/mcp-adapter-rpc.ts",
+      "./extensions/btw.ts",
+      "./extensions/retry.ts",
+      "./extensions/turn-stats.ts",
+      "./extensions/input-bar.ts",
+      "./extensions/git-ai.ts",
+      "./extensions/multi-skills/index.ts",
+      "./extensions/omp-compaction/index.ts"
+    ],
+    "skills": ["./skills"],
+    "subagents": { "agents": ["./agents"] }
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-agent-core": "*",
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*"
+  }
+}

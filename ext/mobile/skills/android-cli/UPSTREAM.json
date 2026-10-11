@@ -1,0 +1,14 @@
+{
+  "repository": "https://github.com/android/skills",
+  "sourceCommit": "ea05a53683d1fb1fc701c3ad91f494d25d4fc7c6",
+  "sourceFiles": {
+    "SKILL.md": "b79254ca7999ceb3e4e3d623ff2859b270788867972c82f4d05c78f878e0e2e8",
+    "references/interact.md": "2e3214f0c27babea9846ad13827b279e67fe088f4d0a3b4f6fbb7d14d343c555",
+    "references/journeys.md": "47998aae919b921da8e514eeb3796e681f6ae01613f00ba451efab676e18394e",
+    "LICENSE.txt": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
+  },
+  "license": "Apache-2.0",
+  "licenseSha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+  "vendoredAt": "2026-08-30",
+  "adaptation": "Keep the official Android CLI command model and device references while preventing Android CLI from installing or updating OMP-owned skills, prohibiting pipe-to-shell installation and automatic CLI or whole-SDK updates, using ANDROID_HOME, and isolating rooted-emulator work."
+}

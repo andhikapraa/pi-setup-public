@@ -1,0 +1,8 @@
+{
+  "repository": "https://github.com/pbakaus/impeccable",
+  "version": "4.4.0",
+  "license": "Apache-2.0",
+  "licenseFile": "LICENSE",
+  "originallyVendored": "skill-v4.1.2 (commit 380cfcb08eccc9787f1153d15fed3de939765230), official Pi provider payload",
+  "localChanges": "Updated to 4.4.0 and adapted for Pi in pi-setup; see git history. The post-edit hook lives in ../../extensions/impeccable-hook.ts."
+}

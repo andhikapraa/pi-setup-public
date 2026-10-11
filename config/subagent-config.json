@@ -1,0 +1,10 @@
+{
+  "parallel": {
+    "maxTasks": 8,
+    "concurrency": 3
+  },
+  "scheduledRuns": {
+    "enabled": false
+  },
+  "defaultSessionDir": "~/.pi/agent/sessions/subagents/"
+}

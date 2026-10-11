@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "repository": "https://github.com/google/skills",
+  "commit": "a7123f80525a4438bc9601d7d6511dfde674b620",
+  "sourcePath": "skills/developers/retrieving-developer-knowledge/SKILL.md",
+  "sourceBlobSha": "e0a173fb1009b89150d1e6d3d6c6196406018c40",
+  "sourceSha256": "868510ec65bb8a8a9f8f6d3b812dcd33226eac0eceb812863fc796588a0944c3",
+  "installedAt": "2026-08-31",
+  "mode": "adapted",
+  "license": "Apache-2.0",
+  "licenseFile": "LICENSE",
+  "adaptation": "Preserve official Google documentation grounding while routing through mounted Developer Knowledge tools, Context7, native read/web search, and context-mode; do not globally inject Google MCP configuration.",
+  "localChanges": "Further adapted for Pi in pi-setup after the OMP adaptation above; see git history."
+}
