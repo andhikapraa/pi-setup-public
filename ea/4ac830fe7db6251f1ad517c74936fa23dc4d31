@@ -1,0 +1,707 @@
+.gitignore
+  s_70a48f0c8c227c::t_820dbd9419752c 1-8
+LICENSE
+  s_0257ce58512ec4::t_520a922c4d0c55 1-24
+README.md
+  s_0257ce58512ec4::t_3d8fc49ec9eb04 1-127
+THIRD_PARTY.md
+  s_0257ce58512ec4::t_e5237359eb94fe 1-29
+agents/reviewer.md
+  s_0257ce58512ec4::t_73185cf7583ea0 1-12
+agents/scout.md
+  s_0257ce58512ec4::t_838216dc24167e 1-12
+agents/worker.md
+  s_0257ce58512ec4::t_6fba2523d5ff4e 1-12
+config/pi-exa.json
+  s_0257ce58512ec4::t_ac835f745a8ff5 1-5
+config/subagent-config.json
+  s_0257ce58512ec4::t_90c8ee22b4b190 1-10
+ext/adhd/ABOUT
+  s_0257ce58512ec4::t_d6ce43f35220a4 1
+ext/adhd/packages.txt
+  s_0257ce58512ec4::t_15433f6a59caa9 1-2
+ext/axon/ABOUT
+  s_0257ce58512ec4::t_a8a9eb8ad72778 1
+ext/axon/package/package.json
+  s_0257ce58512ec4::t_3d47b94ff97b52 1-26
+ext/axon/package/src/clipboard.ts
+  s_0257ce58512ec4::t_c0bf435852578c 1-31
+ext/axon/package/src/config.ts
+  s_0257ce58512ec4::t_f5019905fa9bcf 1-197
+ext/axon/package/src/index.ts
+  s_8144bdaffeab0e::t_053dbb19006413 1-624
+ext/axon/package/src/keychain.ts
+  s_0257ce58512ec4::t_77e63f57ed3485 1-124
+ext/axon/package/src/models.ts
+  s_0257ce58512ec4::t_b4a658c34b753c 1-445
+ext/axon/package/src/openapi.ts
+  s_0257ce58512ec4::t_e1f5da28f3dbf5 1-284
+ext/cloudflare/ABOUT
+  s_0257ce58512ec4::t_87c0236b6ea3a2 1
+ext/cloudflare/skills/wrangler/LICENSE
+  s_0257ce58512ec4::t_0c872f2b7d2edc 1-202
+ext/cloudflare/skills/wrangler/SKILL.md
+  s_0257ce58512ec4::t_ffb184c398076b 1-921
+ext/cloudflare/skills/wrangler/UPSTREAM.json
+  s_0257ce58512ec4::t_389b3f4aafa075 1-14
+ext/dokploy/ABOUT
+  s_0257ce58512ec4::t_b7b60e1831374d 1
+ext/dokploy/skills/dokploy/LICENSE
+  s_0257ce58512ec4::t_bc3807d54ce030 1-21
+ext/dokploy/skills/dokploy/SKILL.md
+  s_a56b18a1fae5c5::t_5a4dfff1dca67f 1-211
+ext/dokploy/skills/dokploy/UPSTREAM.json
+  s_afca8ca8809005::t_ac7f0ee9886061 1-10
+ext/dokploy/skills/dokploy/reference.md
+  s_0257ce58512ec4::t_f6006e47574ee2 1-677
+ext/fallow/ABOUT
+  s_0257ce58512ec4::t_ac0964b1181232 1
+ext/fallow/packages.txt
+  s_0257ce58512ec4::t_7df265572d10fd 1-2
+ext/firecrawl/ABOUT
+  s_0257ce58512ec4::t_55fb63acf42825 1
+ext/firecrawl/packages.txt
+  s_0257ce58512ec4::t_7603f34c2e8ce3 1-2
+ext/frontend/ABOUT
+  s_0257ce58512ec4::t_6735855590aa5d 1
+ext/frontend/extensions/impeccable-hook.ts
+  s_0257ce58512ec4::t_b3e625be4dbff6 1-118
+ext/frontend/skills/impeccable/LICENSE
+  s_0257ce58512ec4::t_19d5afbf1c4105 1-191
+ext/frontend/skills/impeccable/SKILL.md
+  s_0257ce58512ec4::t_80ea53ec71b98d 1-88
+ext/frontend/skills/impeccable/UPSTREAM.json
+  s_0257ce58512ec4::t_d685af96833a5f 1-8
+ext/frontend/skills/impeccable/reference/adapt.md
+  s_0257ce58512ec4::t_737105f535c60b 1-318
+ext/frontend/skills/impeccable/reference/adapt.native.md
+  s_0257ce58512ec4::t_4a76e56afe4efd 1-58
+ext/frontend/skills/impeccable/reference/android.md
+  s_0257ce58512ec4::t_9c74eec7d10bca 1-46
+ext/frontend/skills/impeccable/reference/animate.md
+  s_0257ce58512ec4::t_66b7d6965b9de4 1-89
+ext/frontend/skills/impeccable/reference/audit.md
+  s_0257ce58512ec4::t_86460fc96af8ba 1-137
+ext/frontend/skills/impeccable/reference/audit.native.md
+  s_0257ce58512ec4::t_72d6e64735e93a 1-139
+ext/frontend/skills/impeccable/reference/bolder.md
+  s_0257ce58512ec4::t_d3c673eb9bb5b2 1-33
+ext/frontend/skills/impeccable/reference/clarify.md
+  s_0257ce58512ec4::t_dc72b1720b88eb 1-94
+ext/frontend/skills/impeccable/reference/colorize.md
+  s_0257ce58512ec4::t_22a7feb02152dd 1-86
+ext/frontend/skills/impeccable/reference/component-review.md
+  s_0257ce58512ec4::t_eccb321916d3fd 1-71
+ext/frontend/skills/impeccable/reference/craft-floor.md
+  s_0257ce58512ec4::t_866d913104bcbe 1-44
+ext/frontend/skills/impeccable/reference/craft.md
+  s_0257ce58512ec4::t_fd1a8a4f06f1f5 1-5
+ext/frontend/skills/impeccable/reference/critique.md
+  s_0257ce58512ec4::t_af7ceeebf31de1 1-806
+ext/frontend/skills/impeccable/reference/degraded/asset-producer.md
+  s_0257ce58512ec4::t_9e3cedde4bb9bf 1-41
+ext/frontend/skills/impeccable/reference/degraded/documenter.md
+  s_0257ce58512ec4::t_f666c7e2b86196 1-24
+ext/frontend/skills/impeccable/reference/degraded/finish-reviewer.md
+  s_0257ce58512ec4::t_e01d326a6ee414 1-38
+ext/frontend/skills/impeccable/reference/degraded/manual-edit-applier.md
+  s_0257ce58512ec4::t_3cde8ffa8e3def 1-92
+ext/frontend/skills/impeccable/reference/delight.md
+  s_0257ce58512ec4::t_6d73e014895b13 1-70
+ext/frontend/skills/impeccable/reference/distill.md
+  s_0257ce58512ec4::t_8f4e8d3ef5d881 1-111
+ext/frontend/skills/impeccable/reference/doctor.md
+  s_0257ce58512ec4::t_bc3d937e10f578 1-54
+ext/frontend/skills/impeccable/reference/document.md
+  s_0257ce58512ec4::t_38a4a1cb22152d 1-416
+ext/frontend/skills/impeccable/reference/extract.md
+  s_0257ce58512ec4::t_16f3ec8edf1f0f 1-69
+ext/frontend/skills/impeccable/reference/generate.md
+  s_0257ce58512ec4::t_f048a17fd8ee42 1-101
+ext/frontend/skills/impeccable/reference/harden.md
+  s_0257ce58512ec4::t_9898386d7848cb 1-345
+ext/frontend/skills/impeccable/reference/hooks.md
+  s_0257ce58512ec4::t_38e7068054f7b5 1-113
+ext/frontend/skills/impeccable/reference/init.md
+  s_0257ce58512ec4::t_07f4cef8bca403 1-131
+ext/frontend/skills/impeccable/reference/ios.md
+  s_0257ce58512ec4::t_933891de517933 1-51
+ext/frontend/skills/impeccable/reference/layout.md
+  s_0257ce58512ec4::t_2e87cb525107d9 1-84
+ext/frontend/skills/impeccable/reference/live-setup.md
+  s_0257ce58512ec4::t_3841ff8966fe3e 1-104
+ext/frontend/skills/impeccable/reference/live.md
+  s_0257ce58512ec4::t_abc250f3c11923 1-325
+ext/frontend/skills/impeccable/reference/new-work.md
+  s_0257ce58512ec4::t_71558a74304415 1-152
+ext/frontend/skills/impeccable/reference/onboard.md
+  s_0257ce58512ec4::t_46e448f34fc722 1-234
+ext/frontend/skills/impeccable/reference/operate.md
+  s_0257ce58512ec4::t_5fa03a694885cd 1-61
+ext/frontend/skills/impeccable/reference/optimize.md
+  s_0257ce58512ec4::t_a17004b4485ecf 1-258
+ext/frontend/skills/impeccable/reference/overdrive.md
+  s_0257ce58512ec4::t_ae08638d70b73b 1-127
+ext/frontend/skills/impeccable/reference/polish.md
+  s_0257ce58512ec4::t_78c532706f9fa9 1-105
+ext/frontend/skills/impeccable/reference/quieter.md
+  s_0257ce58512ec4::t_c7f6f091e0c3b2 1-99
+ext/frontend/skills/impeccable/reference/region-map.md
+  s_0257ce58512ec4::t_6c857e9a169348 1-20
+ext/frontend/skills/impeccable/reference/routing.md
+  s_0257ce58512ec4::t_b31e52c2f4afc2 1-24
+ext/frontend/skills/impeccable/reference/shape.md
+  s_0257ce58512ec4::t_4d11ed25f826a4 1-59
+ext/frontend/skills/impeccable/reference/typeset.md
+  s_0257ce58512ec4::t_1bfebe53adc295 1-80
+ext/frontend/skills/impeccable/reference/visualize.md
+  s_0257ce58512ec4::t_3c65440f0e1fd1 1-46
+ext/frontend/skills/impeccable/scripts/VERSION
+  s_0257ce58512ec4::t_39c154ef39bd64 1
+ext/frontend/skills/impeccable/scripts/command-metadata.json
+  s_0257ce58512ec4::t_3abb09ef4ebc09 1-98
+ext/frontend/skills/impeccable/scripts/data/font-index-failures.json
+  s_0257ce58512ec4::t_eaaf9bf5f72723 1-121
+ext/frontend/skills/impeccable/scripts/data/font-index.json
+  s_0257ce58512ec4::t_9b8de37d662ebc 1
+ext/frontend/skills/impeccable/scripts/impeccable
+  s_0257ce58512ec4::t_4c87dab1b83139 1-206
+ext/frontend/skills/impeccable/scripts/impeccable.cmd
+  s_0257ce58512ec4::t_29e997bbf36a29 1-214
+ext/frontend/skills/impeccable/scripts/live-browser-dom.js
+  s_0257ce58512ec4::t_42659ca0be3722 1-167
+ext/frontend/skills/impeccable/scripts/live-browser-ignores.js
+  s_0257ce58512ec4::t_cd0960c1f2a9ca 1-242
+ext/frontend/skills/impeccable/scripts/live-browser-session.js
+  s_0257ce58512ec4::t_abb92a3ccc4319 1-144
+ext/frontend/skills/impeccable/scripts/live-browser.js
+  s_0257ce58512ec4::t_39aa54c7e84db5 1-13510
+ext/frontend/skills/impeccable/scripts/modern-screenshot.umd.js
+  s_0257ce58512ec4::t_59526442713490 1-14
+ext/frontend/skills/vercel-composition-patterns/AGENTS.md
+  s_0257ce58512ec4::t_4f6b61140818f4 1-946
+ext/frontend/skills/vercel-composition-patterns/README.md
+  s_0257ce58512ec4::t_3b01961e368178 1-60
+ext/frontend/skills/vercel-composition-patterns/SKILL.md
+  s_0257ce58512ec4::t_a377e88f92796f 1-89
+ext/frontend/skills/vercel-composition-patterns/UPSTREAM.json
+  s_0257ce58512ec4::t_b1ac2ef8999faa 1-7
+ext/frontend/skills/vercel-composition-patterns/metadata.json
+  s_0257ce58512ec4::t_7eff757d5ae17e 1-11
+ext/frontend/skills/vercel-composition-patterns/rules/_sections.md
+  s_0257ce58512ec4::t_670700d6585a53 1-29
+ext/frontend/skills/vercel-composition-patterns/rules/_template.md
+  s_0257ce58512ec4::t_6ec9d915894c2d 1-24
+ext/frontend/skills/vercel-composition-patterns/rules/architecture-avoid-boolean-props.md
+  s_0257ce58512ec4::t_a08c9df6149fa1 1-100
+ext/frontend/skills/vercel-composition-patterns/rules/architecture-compound-components.md
+  s_0257ce58512ec4::t_fcb6fccbc61bd8 1-112
+ext/frontend/skills/vercel-composition-patterns/rules/patterns-children-over-render-props.md
+  s_0257ce58512ec4::t_7ddcf930bf30a5 1-87
+ext/frontend/skills/vercel-composition-patterns/rules/patterns-explicit-variants.md
+  s_0257ce58512ec4::t_df96abc75ed7f6 1-100
+ext/frontend/skills/vercel-composition-patterns/rules/react19-no-forwardref.md
+  s_0257ce58512ec4::t_c464257c5abc3c 1-42
+ext/frontend/skills/vercel-composition-patterns/rules/state-context-interface.md
+  s_0257ce58512ec4::t_034956d1fe1232 1-191
+ext/frontend/skills/vercel-composition-patterns/rules/state-decouple-implementation.md
+  s_0257ce58512ec4::t_3d1960b88c52c1 1-113
+ext/frontend/skills/vercel-composition-patterns/rules/state-lift-state.md
+  s_0257ce58512ec4::t_74b2794700789c 1-125
+ext/frontend/skills/vercel-react-best-practices/AGENTS.md
+  s_0257ce58512ec4::t_bd7285ca4fcf7b 1-3810
+ext/frontend/skills/vercel-react-best-practices/README.md
+  s_0257ce58512ec4::t_12d3e4248c816f 1-123
+ext/frontend/skills/vercel-react-best-practices/SKILL.md
+  s_0257ce58512ec4::t_f50cbb310c04ed 1-149
+ext/frontend/skills/vercel-react-best-practices/UPSTREAM.json
+  s_0257ce58512ec4::t_e73b8d7e0741b9 1-7
+ext/frontend/skills/vercel-react-best-practices/metadata.json
+  s_0257ce58512ec4::t_716f2e40734550 1-15
+ext/frontend/skills/vercel-react-best-practices/rules/_sections.md
+  s_0257ce58512ec4::t_5d0d05586b0afe 1-46
+ext/frontend/skills/vercel-react-best-practices/rules/_template.md
+  s_0257ce58512ec4::t_0ff4201d944dc6 1-28
+ext/frontend/skills/vercel-react-best-practices/rules/advanced-effect-event-deps.md
+  s_0257ce58512ec4::t_0faec5a90e1060 1-56
+ext/frontend/skills/vercel-react-best-practices/rules/advanced-event-handler-refs.md
+  s_0257ce58512ec4::t_f0536f5998f176 1-55
+ext/frontend/skills/vercel-react-best-practices/rules/advanced-init-once.md
+  s_0257ce58512ec4::t_565da5a89097d6 1-42
+ext/frontend/skills/vercel-react-best-practices/rules/advanced-use-latest.md
+  s_0257ce58512ec4::t_05bb112002ac39 1-39
+ext/frontend/skills/vercel-react-best-practices/rules/async-api-routes.md
+  s_0257ce58512ec4::t_6f1ab823e2cdd6 1-38
+ext/frontend/skills/vercel-react-best-practices/rules/async-cheap-condition-before-await.md
+  s_0257ce58512ec4::t_e65beabe196573 1-37
+ext/frontend/skills/vercel-react-best-practices/rules/async-defer-await.md
+  s_0257ce58512ec4::t_664a959f27a594 1-82
+ext/frontend/skills/vercel-react-best-practices/rules/async-dependencies.md
+  s_0257ce58512ec4::t_a7b3dc79ff783f 1-51
+ext/frontend/skills/vercel-react-best-practices/rules/async-parallel.md
+  s_0257ce58512ec4::t_a61558f9beb40c 1-28
+ext/frontend/skills/vercel-react-best-practices/rules/async-suspense-boundaries.md
+  s_0257ce58512ec4::t_4c3f8ecacce2b5 1-99
+ext/frontend/skills/vercel-react-best-practices/rules/bundle-analyzable-paths.md
+  s_0257ce58512ec4::t_8c159e498f8221 1-63
+ext/frontend/skills/vercel-react-best-practices/rules/bundle-barrel-imports.md
+  s_0257ce58512ec4::t_984e912a2e3282 1-60
+ext/frontend/skills/vercel-react-best-practices/rules/bundle-conditional.md
+  s_0257ce58512ec4::t_215dc23a84926a 1-31
+ext/frontend/skills/vercel-react-best-practices/rules/bundle-defer-third-party.md
+  s_0257ce58512ec4::t_6695f900fa419f 1-49
+ext/frontend/skills/vercel-react-best-practices/rules/bundle-dynamic-imports.md
+  s_0257ce58512ec4::t_1d1ec9a146d8ab 1-35
+ext/frontend/skills/vercel-react-best-practices/rules/bundle-preload.md
+  s_0257ce58512ec4::t_a93344f1edbe73 1-50
+ext/frontend/skills/vercel-react-best-practices/rules/client-event-listeners.md
+  s_0257ce58512ec4::t_7c748661e2a9eb 1-74
+ext/frontend/skills/vercel-react-best-practices/rules/client-localstorage-schema.md
+  s_0257ce58512ec4::t_bbb8caa8c4eec8 1-71
+ext/frontend/skills/vercel-react-best-practices/rules/client-passive-event-listeners.md
+  s_0257ce58512ec4::t_ae5a0fd60f6e1f 1-48
+ext/frontend/skills/vercel-react-best-practices/rules/client-swr-dedup.md
+  s_0257ce58512ec4::t_47ad7bd8744cf2 1-56
+ext/frontend/skills/vercel-react-best-practices/rules/js-batch-dom-css.md
+  s_0257ce58512ec4::t_353491629774fc 1-107
+ext/frontend/skills/vercel-react-best-practices/rules/js-cache-function-results.md
+  s_0257ce58512ec4::t_1ef9a18847e4d2 1-80
+ext/frontend/skills/vercel-react-best-practices/rules/js-cache-property-access.md
+  s_0257ce58512ec4::t_5679c1673020ab 1-28
+ext/frontend/skills/vercel-react-best-practices/rules/js-cache-storage.md
+  s_0257ce58512ec4::t_9bbf1d49577d61 1-70
+ext/frontend/skills/vercel-react-best-practices/rules/js-combine-iterations.md
+  s_0257ce58512ec4::t_514fc5cd4869c4 1-32
+ext/frontend/skills/vercel-react-best-practices/rules/js-early-exit.md
+  s_0257ce58512ec4::t_1c5a91f7e9e666 1-50
+ext/frontend/skills/vercel-react-best-practices/rules/js-flatmap-filter.md
+  s_0257ce58512ec4::t_1faf390fa52d04 1-60
+ext/frontend/skills/vercel-react-best-practices/rules/js-hoist-regexp.md
+  s_0257ce58512ec4::t_7d2fa28ebff038 1-45
+ext/frontend/skills/vercel-react-best-practices/rules/js-index-maps.md
+  s_0257ce58512ec4::t_2258c6ff266d42 1-37
+ext/frontend/skills/vercel-react-best-practices/rules/js-length-check-first.md
+  s_0257ce58512ec4::t_85cbd8f083ba9e 1-49
+ext/frontend/skills/vercel-react-best-practices/rules/js-min-max-loop.md
+  s_0257ce58512ec4::t_9ddb99f51c89c1 1-82
+ext/frontend/skills/vercel-react-best-practices/rules/js-request-idle-callback.md
+  s_0257ce58512ec4::t_7f423f3bb87a95 1-105
+ext/frontend/skills/vercel-react-best-practices/rules/js-set-map-lookups.md
+  s_0257ce58512ec4::t_6f0ac53f4224c9 1-24
+ext/frontend/skills/vercel-react-best-practices/rules/js-tosorted-immutable.md
+  s_0257ce58512ec4::t_44f03b241f4521 1-57
+ext/frontend/skills/vercel-react-best-practices/rules/rendering-activity.md
+  s_0257ce58512ec4::t_7cc7850f02d8f6 1-26
+ext/frontend/skills/vercel-react-best-practices/rules/rendering-animate-svg-wrapper.md
+  s_0257ce58512ec4::t_2991e034c14f1b 1-47
+ext/frontend/skills/vercel-react-best-practices/rules/rendering-conditional-render.md
+  s_0257ce58512ec4::t_c5aea6922b034f 1-40
+ext/frontend/skills/vercel-react-best-practices/rules/rendering-content-visibility.md
+  s_0257ce58512ec4::t_c3d37b0bd302fa 1-38
+ext/frontend/skills/vercel-react-best-practices/rules/rendering-hoist-jsx.md
+  s_0257ce58512ec4::t_6ebcf324396ef1 1-46
+ext/frontend/skills/vercel-react-best-practices/rules/rendering-hydration-no-flicker.md
+  s_0257ce58512ec4::t_57330cb4aab4b3 1-82
+ext/frontend/skills/vercel-react-best-practices/rules/rendering-hydration-suppress-warning.md
+  s_0257ce58512ec4::t_62610e2aba5129 1-30
+ext/frontend/skills/vercel-react-best-practices/rules/rendering-resource-hints.md
+  s_0257ce58512ec4::t_8a7ac209310e1f 1-85
+ext/frontend/skills/vercel-react-best-practices/rules/rendering-script-defer-async.md
+  s_0257ce58512ec4::t_c2b9b0f5e39e28 1-68
+ext/frontend/skills/vercel-react-best-practices/rules/rendering-svg-precision.md
+  s_0257ce58512ec4::t_e86b6192804e72 1-28
+ext/frontend/skills/vercel-react-best-practices/rules/rendering-usetransition-loading.md
+  s_0257ce58512ec4::t_a072fc30a91fcc 1-75
+ext/frontend/skills/vercel-react-best-practices/rules/rerender-defer-reads.md
+  s_0257ce58512ec4::t_2748e2bccfb0e9 1-39
+ext/frontend/skills/vercel-react-best-practices/rules/rerender-dependencies.md
+  s_0257ce58512ec4::t_5908467f7b0a0c 1-45
+ext/frontend/skills/vercel-react-best-practices/rules/rerender-derived-state-no-effect.md
+  s_0257ce58512ec4::t_4d7e02afbd3f46 1-40
+ext/frontend/skills/vercel-react-best-practices/rules/rerender-derived-state.md
+  s_0257ce58512ec4::t_d9bf281af14c63 1-29
+ext/frontend/skills/vercel-react-best-practices/rules/rerender-functional-setstate.md
+  s_0257ce58512ec4::t_fe6a0210a8ee0e 1-74
+ext/frontend/skills/vercel-react-best-practices/rules/rerender-lazy-state-init.md
+  s_0257ce58512ec4::t_f68f62a91d10b8 1-58
+ext/frontend/skills/vercel-react-best-practices/rules/rerender-memo-with-default-value.md
+  s_0257ce58512ec4::t_db2dd326e6fb4f 1-38
+ext/frontend/skills/vercel-react-best-practices/rules/rerender-memo.md
+  s_0257ce58512ec4::t_332a0560f48f94 1-44
+ext/frontend/skills/vercel-react-best-practices/rules/rerender-move-effect-to-event.md
+  s_0257ce58512ec4::t_0fd5fc8f4aec37 1-45
+ext/frontend/skills/vercel-react-best-practices/rules/rerender-no-inline-components.md
+  s_0257ce58512ec4::t_7c034b9b88de27 1-82
+ext/frontend/skills/vercel-react-best-practices/rules/rerender-simple-expression-in-memo.md
+  s_0257ce58512ec4::t_b3a190aafaed43 1-35
+ext/frontend/skills/vercel-react-best-practices/rules/rerender-split-combined-hooks.md
+  s_0257ce58512ec4::t_d5fe9283b607d7 1-64
+ext/frontend/skills/vercel-react-best-practices/rules/rerender-transitions.md
+  s_0257ce58512ec4::t_bca9f3e025fd6a 1-40
+ext/frontend/skills/vercel-react-best-practices/rules/rerender-use-deferred-value.md
+  s_0257ce58512ec4::t_82293614ae25bf 1-59
+ext/frontend/skills/vercel-react-best-practices/rules/rerender-use-ref-transient-values.md
+  s_0257ce58512ec4::t_c450ee0ef18c6f 1-73
+ext/frontend/skills/vercel-react-best-practices/rules/server-after-nonblocking.md
+  s_0257ce58512ec4::t_cdd75554f455e6 1-73
+ext/frontend/skills/vercel-react-best-practices/rules/server-auth-actions.md
+  s_0257ce58512ec4::t_75cdf045a2aead 1-96
+ext/frontend/skills/vercel-react-best-practices/rules/server-cache-lru.md
+  s_0257ce58512ec4::t_8217d22ec27999 1-41
+ext/frontend/skills/vercel-react-best-practices/rules/server-cache-react.md
+  s_0257ce58512ec4::t_c483ab6db79d64 1-76
+ext/frontend/skills/vercel-react-best-practices/rules/server-dedup-props.md
+  s_0257ce58512ec4::t_772a2e05add6eb 1-65
+ext/frontend/skills/vercel-react-best-practices/rules/server-hoist-static-io.md
+  s_0257ce58512ec4::t_3ece80bc0f157d 1-149
+ext/frontend/skills/vercel-react-best-practices/rules/server-no-shared-module-state.md
+  s_0257ce58512ec4::t_93909fc64f6391 1-50
+ext/frontend/skills/vercel-react-best-practices/rules/server-parallel-fetching.md
+  s_0257ce58512ec4::t_56324354aa30cd 1-83
+ext/frontend/skills/vercel-react-best-practices/rules/server-parallel-nested-fetching.md
+  s_0257ce58512ec4::t_bef6d04d919f14 1-34
+ext/frontend/skills/vercel-react-best-practices/rules/server-serialization.md
+  s_0257ce58512ec4::t_c4cb52cdc979e4 1-38
+ext/frontend/skills/web-perf/SKILL.md
+  s_0257ce58512ec4::t_5d69a9307ba893 1-115
+ext/google/ABOUT
+  s_0257ce58512ec4::t_dc9d90677694a6 1
+ext/google/skills/finding-google-skills/LICENSE
+  s_0257ce58512ec4::t_f91812d4b60280 1-202
+ext/google/skills/finding-google-skills/SKILL.md
+  s_0257ce58512ec4::t_157fed24152aed 1-39
+ext/google/skills/finding-google-skills/UPSTREAM.json
+  s_0257ce58512ec4::t_b8dfa411df9c37 1-14
+ext/google/skills/gcloud/LICENSE
+  s_0257ce58512ec4::t_42fc3ee1a3af2b 1-202
+ext/google/skills/gcloud/SKILL.md
+  s_0257ce58512ec4::t_23d4fedcf18d04 1-65
+ext/google/skills/gcloud/UPSTREAM.json
+  s_0257ce58512ec4::t_f92ac64e377110 1-14
+ext/google/skills/retrieving-developer-knowledge/LICENSE
+  s_0257ce58512ec4::t_7280aa20923468 1-202
+ext/google/skills/retrieving-developer-knowledge/SKILL.md
+  s_0257ce58512ec4::t_f9ac4e0679611e 1-51
+ext/google/skills/retrieving-developer-knowledge/UPSTREAM.json
+  s_0257ce58512ec4::t_ad674f41bfdc20 1-14
+ext/hindsight/ABOUT
+  s_0257ce58512ec4::t_ddef8b1eb9aadb 1
+ext/hindsight/packages.txt
+  s_0257ce58512ec4::t_6246f0153a6fa5 1-2
+ext/mobile/ABOUT
+  s_0257ce58512ec4::t_bdc31c8fa7d07e 1
+ext/mobile/skills/android-cli/LICENSE.txt
+  s_0257ce58512ec4::t_4fe725971c776f 1-202
+ext/mobile/skills/android-cli/SKILL.md
+  s_0257ce58512ec4::t_f7c29ad085ada5 1-118
+ext/mobile/skills/android-cli/UPSTREAM.json
+  s_0257ce58512ec4::t_067f8f88b8ed2b 1-14
+ext/mobile/skills/android-cli/references/interact.md
+  s_0257ce58512ec4::t_fd2576e755882c 1-83
+ext/mobile/skills/android-cli/references/journeys.md
+  s_0257ce58512ec4::t_33bdb8d49aa8aa 1-97
+ext/mobile/skills/android-rooted-avd/SKILL.md
+  s_0257ce58512ec4::t_3d6af3c0c9d893 1-131
+ext/mobile/skills/android-rooted-avd/UPSTREAM.json
+  s_0257ce58512ec4::t_823772c4dfea3c 1-9
+ext/mobile/skills/android-rooted-avd/artifacts.json
+  s_0257ce58512ec4::t_79e1b47c1efaad 1-72
+ext/mobile/skills/ios-device-qa/KIF-LICENSE
+  s_0257ce58512ec4::t_40ceb40a03e896 1-15
+ext/mobile/skills/ios-device-qa/LICENSE
+  s_0257ce58512ec4::t_c62e878dcd92f5 1-21
+ext/mobile/skills/ios-device-qa/SKILL.md
+  s_0257ce58512ec4::t_eb76e1a44f965d 1-113
+ext/mobile/skills/ios-device-qa/UPSTREAM.json
+  s_0257ce58512ec4::t_1b4d7cd884e968 1-11
+ext/mobile/skills/ios-device-qa/device-bridge/TEMPLATE-MAP.json
+  s_0257ce58512ec4::t_554d5a48450946 1-20
+ext/mobile/skills/ios-device-qa/device-bridge/daemon/src/allowlist.ts
+  s_0257ce58512ec4::t_92f056c43d5d1d 1-113
+ext/mobile/skills/ios-device-qa/device-bridge/daemon/src/audit.ts
+  s_0257ce58512ec4::t_760822a394e086 1-90
+ext/mobile/skills/ios-device-qa/device-bridge/daemon/src/auth-mint.ts
+  s_0257ce58512ec4::t_e9d44cc5dadd5d 1-85
+ext/mobile/skills/ios-device-qa/device-bridge/daemon/src/cli-mint.ts
+  s_0257ce58512ec4::t_67fc72ce955bd1 1-149
+ext/mobile/skills/ios-device-qa/device-bridge/daemon/src/devicectl.ts
+  s_0257ce58512ec4::t_eb39fe212b509b 1-329
+ext/mobile/skills/ios-device-qa/device-bridge/daemon/src/index.ts
+  s_0257ce58512ec4::t_356061176f0043 1-449
+ext/mobile/skills/ios-device-qa/device-bridge/daemon/src/proxy.ts
+  s_0257ce58512ec4::t_795a3f1b6765c6 1-109
+ext/mobile/skills/ios-device-qa/device-bridge/daemon/src/session-tokens.ts
+  s_0257ce58512ec4::t_384955831a84c9 1-126
+ext/mobile/skills/ios-device-qa/device-bridge/daemon/src/single-instance.ts
+  s_0257ce58512ec4::t_92070108df4b69 1-170
+ext/mobile/skills/ios-device-qa/device-bridge/daemon/src/tailscale-localapi.ts
+  s_0257ce58512ec4::t_c764b083cb784c 1-120
+ext/mobile/skills/ios-device-qa/device-bridge/daemon/src/tunnel-bootstrap.ts
+  s_0257ce58512ec4::t_6aecb13f8c982d 1-174
+ext/mobile/skills/ios-device-qa/device-bridge/daemon/src/types.ts
+  s_0257ce58512ec4::t_c44832c536265b 1-91
+ext/mobile/skills/ios-device-qa/device-bridge/docs/tailscale-acl-example.md
+  s_0257ce58512ec4::t_982a30261ee29a 1-157
+ext/mobile/skills/ios-device-qa/device-bridge/scripts/gen-accessors-tool/Package.resolved
+  s_0257ce58512ec4::t_968fa568da2884 1-14
+ext/mobile/skills/ios-device-qa/device-bridge/scripts/gen-accessors-tool/Package.swift
+  s_0257ce58512ec4::t_0c309ea2f61027 1-35
+ext/mobile/skills/ios-device-qa/device-bridge/scripts/gen-accessors-tool/Sources/GenAccessors/main.swift
+  s_0257ce58512ec4::t_12f7692f312bfa 1-228
+ext/mobile/skills/ios-device-qa/device-bridge/scripts/gen-accessors.ts
+  s_0257ce58512ec4::t_bacf5b8c8726c6 1-339
+ext/mobile/skills/ios-device-qa/device-bridge/templates/Bridges.swift.template
+  s_0257ce58512ec4::t_32c2ffa480cce4 1-312
+ext/mobile/skills/ios-device-qa/device-bridge/templates/DebugBridgeManager.swift.template
+  s_0257ce58512ec4::t_f98621750704fa 1-31
+ext/mobile/skills/ios-device-qa/device-bridge/templates/DebugBridgeTouch.h.template
+  s_0257ce58512ec4::t_44a54d1f00fbb2 1-33
+ext/mobile/skills/ios-device-qa/device-bridge/templates/DebugBridgeTouch.m.template
+  s_0257ce58512ec4::t_66d51c75622e1e 1-304
+ext/mobile/skills/ios-device-qa/device-bridge/templates/DebugBridgeWiring.swift.template
+  s_0257ce58512ec4::t_0c1c94458c5003 1-44
+ext/mobile/skills/ios-device-qa/device-bridge/templates/DebugOverlay.swift.template
+  s_0257ce58512ec4::t_2f20445d45c350 1-141
+ext/mobile/skills/ios-device-qa/device-bridge/templates/Package.swift.template
+  s_0257ce58512ec4::t_524d9cf808e06a 1-65
+ext/mobile/skills/ios-device-qa/device-bridge/templates/Snapshotable.swift.template
+  s_0257ce58512ec4::t_5431cea1dffcaa 1-19
+ext/mobile/skills/ios-device-qa/device-bridge/templates/StateAccessor.swift.template
+  s_0257ce58512ec4::t_b07dbb8aab4b7a 1-37
+ext/mobile/skills/ios-device-qa/device-bridge/templates/StateServer.swift.template
+  s_0257ce58512ec4::t_259f00f4415bae 1-582
+ext/trello/ABOUT
+  s_0257ce58512ec4::t_217fc3b02ecf97 1
+ext/trello/packages.txt
+  s_0257ce58512ec4::t_207893c2ab1a22 1-2
+ext/video/ABOUT
+  s_0257ce58512ec4::t_c42e433c18d02a 1
+ext/video/skills/watch/LICENSE
+  s_0257ce58512ec4::t_1b8e4f2fd96af1 1-21
+ext/video/skills/watch/SKILL.md
+  s_0257ce58512ec4::t_55f990eb139a89 1-111
+ext/video/skills/watch/UPSTREAM.json
+  s_0257ce58512ec4::t_080b6ec738dbc5 1-10
+ext/video/skills/watch/scripts/config.py
+  s_0257ce58512ec4::t_11089b5b061f9a 1-74
+ext/video/skills/watch/scripts/download.py
+  s_0257ce58512ec4::t_d3c5af29626810 1-180
+ext/video/skills/watch/scripts/frames.py
+  s_0257ce58512ec4::t_d4fd7c9d365e85 1-756
+ext/video/skills/watch/scripts/transcribe.py
+  s_0257ce58512ec4::t_98fdd1b2fd4384 1-96
+ext/video/skills/watch/scripts/watch.py
+  s_0257ce58512ec4::t_316c68388c1032 1-358
+extensions/btw.ts
+  s_0257ce58512ec4::t_7be242de7ec4bc 1-338
+extensions/git-ai.ts
+  s_0257ce58512ec4::t_3091ee7b0cd6f9 1-382
+extensions/input-bar.ts
+  s_0257ce58512ec4::t_1cffd66e3558b0 1-286
+extensions/keyring-env.ts
+  s_0257ce58512ec4::t_551778c8621533 1-46
+extensions/mcp-adapter-rpc.ts
+  s_70a48f0c8c227c::t_77ea9818ca0e6c 1-36
+extensions/multi-skills/LICENSE
+  s_9aa2dac7a9717d::t_6bf58ccef472a5 1-21
+extensions/multi-skills/UPSTREAM.json
+  s_0257ce58512ec4::t_34929ca124745c 1-14
+extensions/multi-skills/expander.ts
+  s_9aa2dac7a9717d::t_262138978cb83f 1-237
+extensions/multi-skills/index.ts
+  s_0257ce58512ec4::t_4289ac1d4a67b7 1-128
+extensions/multi-skills/parser.ts
+  s_0257ce58512ec4::t_862651b82a115c 1-285
+extensions/multi-skills/resolver.ts
+  s_0257ce58512ec4::t_c9af019dc8deb4 1-68
+extensions/omp-compaction/UPSTREAM.json
+  s_0257ce58512ec4::t_82b5dede4d8757 1-30
+extensions/omp-compaction/handoff.ts
+  s_9aa2dac7a9717d::t_fa3a1a88ff0d89 1-59
+extensions/omp-compaction/index.ts
+  s_9aa2dac7a9717d::t_7e5a079d729c42 1-200
+extensions/omp-compaction/methods.ts
+  s_9aa2dac7a9717d::t_aa5c946bd8b680 1-114
+extensions/omp-compaction/prompts.ts
+  s_9aa2dac7a9717d::t_22939f0fc264a8 1-68
+extensions/omp-compaction/rebuild.ts
+  s_9aa2dac7a9717d::t_bf35c12c86a82a 1-39
+extensions/omp-compaction/shake.ts
+  s_0257ce58512ec4::t_81f8ee37c8ceec 1-683
+extensions/omp-compaction/snapcompact/identity.ts
+  s_0257ce58512ec4::t_854d10e29f78a1 1-156
+extensions/omp-compaction/snapcompact/native.ts
+  s_0257ce58512ec4::t_49b7706b79dbeb 1-112
+extensions/omp-compaction/snapcompact/run.ts
+  s_0257ce58512ec4::t_7a1dd3c9a46887 1-271
+extensions/omp-compaction/snapcompact/snapcompact.ts
+  s_9aa2dac7a9717d::t_f5a21058c15041 1-2246
+extensions/omp-compaction/soft.ts
+  s_9aa2dac7a9717d::t_5c463d582d06ca 1-81
+extensions/omp-compaction/vendor/path-tree.ts
+  s_0257ce58512ec4::t_006c704ecb02ac 1-150
+extensions/omp-compaction/vendor/prompt.ts
+  s_0257ce58512ec4::t_f7cb038ed8690b 1-206
+extensions/omp-compaction/vendor/template.ts
+  s_0257ce58512ec4::t_ae3dfe07477902 1-589
+extensions/retry.ts
+  s_0257ce58512ec4::t_671f79d4cffefb 1-100
+extensions/turn-stats.ts
+  s_0257ce58512ec4::t_2148b4e22f91da 1-107
+package.json
+  s_8144bdaffeab0e::t_936fbe6e5103f6 1-33
+packages.txt
+  s_0257ce58512ec4::t_c8e4b837398a3c 1-9
+scripts/fetch-native.mjs
+  s_0257ce58512ec4::t_29b1562481f258 1-65
+setup.sh
+  s_0257ce58512ec4::t_7532aa7dc2628d 1-265
+skills/babysit-pr/SKILL.md
+  s_0257ce58512ec4::t_b5e07956caadbc 1-87
+skills/browser-automation/SKILL.md
+  s_0257ce58512ec4::t_05db305ff200f0 1-95
+skills/do/LICENSE
+  s_0257ce58512ec4::t_49976e8512fbf4 1-21
+skills/do/SKILL.md
+  s_0257ce58512ec4::t_4e6d94f088d60a 1-163
+skills/domain-modeling/LICENSE
+  s_0257ce58512ec4::t_4ca447142daa2a 1-21
+skills/domain-modeling/SKILL.md
+  s_0257ce58512ec4::t_ad8af59273af2d 1-142
+skills/file-pr/SKILL.md
+  s_0257ce58512ec4::t_c91548278e9ba0 1-56
+skills/html-communication/SKILL.md
+  s_0257ce58512ec4::t_7e267b0286cbbb 1-49
+skills/learn-codebase/SKILL.md
+  s_0257ce58512ec4::t_ce3791fbcc80c7 1-162
+skills/make-plan/LICENSE
+  s_0257ce58512ec4::t_aeb35ca187b8ae 1-21
+skills/make-plan/SKILL.md
+  s_0257ce58512ec4::t_c43429d375e786 1-88
+skills/no-ai-slop/LICENSE
+  s_0257ce58512ec4::t_0e2ae368a9bdbc 1-21
+skills/no-ai-slop/SKILL.md
+  s_70a48f0c8c227c::t_5be96b1ae7c713 1-145
+skills/no-ai-slop/UPSTREAM.json
+  s_70a48f0c8c227c::t_50be643540b194 1-12
+skills/no-ai-slop/eval-cases.json
+  s_70a48f0c8c227c::t_c8dfb9e98bf81b 1-98
+skills/no-ai-slop/eval.md
+  s_70a48f0c8c227c::t_b2ebefcd0d87ec 1-62
+skills/postplan-read/SKILL.md
+  s_0257ce58512ec4::t_a79ef55eb517b6 1-33
+skills/program/LICENSE
+  s_0257ce58512ec4::t_fb330096547965 1-21
+skills/program/SKILL.md
+  s_0257ce58512ec4::t_1babd5ff94ca75 1-196
+skills/program/UPSTREAM.json
+  s_0257ce58512ec4::t_5132a99141d0d6 1-12
+skills/project-init/LICENSE
+  s_0257ce58512ec4::t_8a927c92b4b14c 1-21
+skills/project-init/SKILL.md
+  s_0257ce58512ec4::t_d3b6de125f44a5 1-125
+skills/project-init/UPSTREAM.json
+  s_0257ce58512ec4::t_1f0e57b329eb5e 1-10
+skills/project-init/templates/domain.md
+  s_0257ce58512ec4::t_f1ca7dcc4deee7 1-19
+skills/project-init/templates/issue-tracker-github.md
+  s_0257ce58512ec4::t_df3948b77c182e 1-16
+skills/project-init/templates/issue-tracker-gitlab.md
+  s_0257ce58512ec4::t_2f064cfece2060 1-16
+skills/project-init/templates/issue-tracker-local.md
+  s_0257ce58512ec4::t_18515907fb0b87 1-16
+skills/project-init/templates/issue-tracker.md
+  s_0257ce58512ec4::t_0286b73f13a028 1-19
+skills/project-init/templates/project.md
+  s_0257ce58512ec4::t_8cf41e30410785 1-42
+skills/project-init/templates/triage-labels.md
+  s_0257ce58512ec4::t_fe739ed82a8e2f 1-19
+skills/prototype/LICENSE
+  s_0257ce58512ec4::t_6658dee7bab6a8 1-21
+skills/prototype/SKILL.md
+  s_0257ce58512ec4::t_f50c96752f7c3b 1-73
+skills/qa/LICENSE
+  s_0257ce58512ec4::t_66c3ee3e6bd944 1-21
+skills/qa/SKILL.md
+  s_0257ce58512ec4::t_fe7b6b36e9023c 1-261
+skills/review/LICENSE
+  s_0257ce58512ec4::t_8530291481cf0a 1-21
+skills/review/SKILL.md
+  s_0257ce58512ec4::t_3cc4901df0969b 1-228
+skills/review/checklist.md
+  s_0257ce58512ec4::t_62e282dc384e6a 1-141
+skills/smart-explore/SKILL.md
+  s_0257ce58512ec4::t_590ee11a0f0012 1-46
+skills/teach/LICENSE
+  s_0257ce58512ec4::t_eb5b20ee35904a 1-21
+skills/teach/SKILL.md
+  s_0257ce58512ec4::t_d26bf7d3c79e44 1-185
+skills/wayfinder/LICENSE
+  s_0257ce58512ec4::t_29a8c16a08dcda 1-21
+skills/wayfinder/SKILL.md
+  s_0257ce58512ec4::t_07d6509e457710 1-162
+skills/wayfinder/UPSTREAM.json
+  s_0257ce58512ec4::t_1e40d878fda6b4 1-10
+skills/web-research/SKILL.md
+  s_0257ce58512ec4::t_91355b5b167758 1-45
+skills/writing-for-agents/LICENSE
+  s_0257ce58512ec4::t_3c09fd3d811173 1-21
+skills/writing-for-agents/SKILL.md
+  s_0257ce58512ec4::t_2f50c812a6f586 1-73
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "ea4ac830fe7db6251f1ad517c74936fa23dc4d31",
+  "prompts": {},
+  "sessions": {
+    "s_0257ce58512ec4": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "01a12628-ebf5-7336-b8da-9de622ec23bf",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Muhammad Andhika Prasetya <andhikapraa@gmail.com>"
+    },
+    "s_70a48f0c8c227c": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "01a10226-e0db-71da-bcfb-477f4f65b7c6",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Muhammad Andhika Prasetya <andhikapraa@gmail.com>"
+    },
+    "s_8144bdaffeab0e": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "01a11f78-2485-74d3-a7dc-9ed86dec5599",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Muhammad Andhika Prasetya <andhikapraa@gmail.com>"
+    },
+    "s_9aa2dac7a9717d": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "01a101b2-f970-7678-8d97-6170bcf1a3e0",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Muhammad Andhika Prasetya <andhikapraa@gmail.com>"
+    },
+    "s_a56b18a1fae5c5": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "01a12077-7cc4-7027-b2e0-ef6a6f481128",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Muhammad Andhika Prasetya <andhikapraa@gmail.com>"
+    },
+    "s_afca8ca8809005": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "01a12880-c03e-76b2-95f9-69401e9a5176",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Muhammad Andhika Prasetya <andhikapraa@gmail.com>"
+    }
+  }
+}
