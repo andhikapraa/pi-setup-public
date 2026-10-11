@@ -19,6 +19,9 @@ In a terminal, setup lists the exts and asks which to enable. To choose without 
 ~/.pi/setup/setup.sh --ext frontend,fallow     # or --ext all, --ext none
 ```
 
+Earlier versions installed `context-mode` as core. It is now the `context-mode` ext: rerun with
+`--ext context-mode,...` to keep it, or `pi remove npm:context-mode` to drop it.
+
 Rerun with a different `--ext` list to add or remove exts; setup remembers the last choice in
 `~/.pi/agent/pi-setup.json`. `setup.sh` is safe to rerun. It backs up anything it changes to
 `~/.pi/agent/backups/pi-setup-<time>/`, keeps existing config files, and merges settings
@@ -60,9 +63,12 @@ which setup does not install:
 Skills that use an ext (for example `prototype` uses `impeccable` from `frontend`) say so and
 work without it.
 
-**Subagents** (`agents/`): `scout`, `worker`, `reviewer` for pi-subagents.
+**Subagents** (`agents/`): `scout` (read-only recon), `worker` (one approved ticket, edits only its
+target), and `reviewer` (read-only review) for pi-subagents. The `do` skill dispatches them; they
+never spawn further subagents. `config/subagent-config.json` caps a parallel run at 8 tasks, 3 at a
+time, and is written only if you have no subagent config yet.
 
-**Packages** (`packages.txt`, pinned): context-mode, pi-exa, context7, pi-ask-question,
+**Packages** (`packages.txt`, pinned): pi-exa, context7, pi-ask-question,
 pi-subagents, pi-mcp-adapter.
 
 ## Exts
@@ -74,6 +80,7 @@ Each `ext/<name>/` can hold skills, extensions, and a pinned `packages.txt`.
 | `axon` | [AxonHub](https://github.com/looplj/axonhub) model provider and `/axon-*` commands | Your own AxonHub server and member key |
 | `hindsight` | [Hindsight](https://github.com/andhikapraa/pi-hindsight) long-term memory across sessions | A Hindsight server |
 | `omp-ui` | [oh-my-pi](https://github.com/can1357/oh-my-pi) style UI: powerline input bar with context gauge, a usage row under each reply (time, tokens, cache, tokens/s), and a `/skill:name` menu anywhere in the prompt. Replaces Pi's default input box | |
+| `context-mode` | [context-mode](https://github.com/mksglu/context-mode): `ctx_*` tools that run commands and fetches in a sandbox and return only a summary, a searchable index of large outputs, and a guard that keeps raw `curl`/HTTP output out of the conversation. Adds a short routing note to each turn and keeps a local database in `~/.pi/context-mode`. Elastic License 2.0 | |
 | `frontend` | `impeccable`, Vercel React skills, `web-perf`, and impeccable's post-edit UI check | |
 | `cloudflare` | `wrangler` | |
 | `google` | `gcloud`, Google developer docs lookup, Google skill finder | |

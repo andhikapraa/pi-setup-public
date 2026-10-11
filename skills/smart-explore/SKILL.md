@@ -13,7 +13,7 @@ Choose the cheapest precise retriever first, then read the smallest complete cur
 2. **Choose the first retriever.**
    - Known symbol, path, error, route, field, or config key: use exact search or LSP if the project exposes one.
    - Conceptual ownership or cross-module flow: query repository context if available, then verify candidates against current source.
-   - Large or structured output: use context-mode `ctx_execute`, `ctx_execute_file`, or `ctx_batch_execute` and print only the derived answer.
+   - Large or structured output: when context-mode is installed, use `ctx_execute`, `ctx_execute_file`, or `ctx_batch_execute` and print only the derived answer; otherwise filter with `rg`, `jq`, `head`, or a short script before reading.
    - Broad repository mapping: use the repository's mapping workflow instead of expanding a focused exploration into a survey.
 3. **Search narrowly.** Start at the relevant source root or file family. Broaden only when the result is empty or suspiciously incomplete. Use exact search for strings, errors, routes, flags, serialized fields, templates, scripts, and unsupported languages.
 4. **Follow structure.** When LSP is available, prefer workspace/document symbols, definition, type definition, references, implementations, call hierarchy, and hover. Cross-check generated code, templates, configuration, dynamic dispatch, or reflection manually.
@@ -22,7 +22,7 @@ Choose the cheapest precise retriever first, then read the smallest complete cur
 
 ## Context-mode rule
 
-Use context-mode for logs, large JSON/CSV/API responses, many files, repository statistics, and analysis that would otherwise flood the conversation. Use direct reads and edits for small targeted inspection and files that need modification. Prefer one batch or sandbox call when it replaces several independent reads. Do not use context-mode merely because it exists.
+When context-mode is installed, use it for logs, large JSON/CSV/API responses, many files, repository statistics, and analysis that would otherwise flood the conversation. Use direct reads and edits for small targeted inspection and files that need modification. Prefer one batch or sandbox call when it replaces several independent reads. Do not use context-mode merely because it exists.
 
 ## Impact checks
 

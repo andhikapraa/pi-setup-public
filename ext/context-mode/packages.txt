@@ -1,0 +1,2 @@
+# Pinned Pi packages for this ext. Same format as ../../packages.txt.
+npm:context-mode@1.0.169

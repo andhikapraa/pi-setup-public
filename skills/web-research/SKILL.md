@@ -15,7 +15,7 @@ Choose the cheapest authoritative route that proves the answer. Do not use every
 - Known page that needs JavaScript rendering, clean extraction, PDF handling, or structured extraction: use `firecrawl_scrape`.
 - Site-wide discovery or multi-page extraction: use `firecrawl_map` before `firecrawl_crawl` when mapping is useful.
 - Academic literature: use `firecrawl_research_search_papers`, preserve canonical IDs, verify claims with `firecrawl_research_read_paper`, and expand with `firecrawl_research_related_papers` when relevant.
-- Large search/API/page output: use context-mode to filter, compare, or summarize before returning it to the model.
+- Large search/API/page output: use context-mode (when installed) to filter, compare, or summarize before returning it to the model.
 - Login, clicks, forms, uploads, downloads, or visual state: use browser automation only when direct retrieval cannot answer the question.
 
 ## Evidence workflow
