@@ -1,0 +1,19 @@
+README.md
+  s_0257ce58512ec4::t_32e72cd1807c2b 50-51,53
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "50087807ea050a8e77c5f521b826a5d3652ad2c8",
+  "prompts": {},
+  "sessions": {
+    "s_0257ce58512ec4": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "01a12628-ebf5-7336-b8da-9de622ec23bf",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Muhammad Andhika Prasetya <andhikapraa@gmail.com>"
+    }
+  }
+}
