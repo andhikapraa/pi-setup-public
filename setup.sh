@@ -31,6 +31,14 @@ done
 
 # The GitHub source Pi installs this package from (repo mode). Override for forks.
 SETUP_SOURCE="${PI_SETUP_SOURCE:-git:github.com/andhikapraa/pi-setup-public}"
+# Releases: a checkout on a release tag (detached HEAD, as `git checkout vX.Y.Z` leaves it)
+# installs the package at that tag, so `pi update` keeps it there. A checkout on a branch
+# follows that branch, even when its tip happens to be tagged.
+RELEASE=""
+if (( ! DEV )) && [[ "$SETUP_SOURCE" != *@* ]] && ! git -C "$REPO_DIR" symbolic-ref -q HEAD >/dev/null 2>&1; then
+  RELEASE="$(git -C "$REPO_DIR" describe --tags --exact-match --match 'v[0-9]*' HEAD 2>/dev/null || true)"
+  [[ -n "$RELEASE" ]] && SETUP_SOURCE="$SETUP_SOURCE@$RELEASE"
+fi
 
 say() { printf '\033[1m[pi-setup]\033[0m %s\n' "$*"; }
 die() { printf '\033[31m[pi-setup]\033[0m %s\n' "$*" >&2; exit 1; }
@@ -99,7 +107,7 @@ REMOVED_EXT=""
 for name in $PREV_EXT; do has "$name" "$EXT" || REMOVED_EXT="$REMOVED_EXT $name"; done
 
 mkdir -p "$AGENT_DIR"
-say "Pi $(pi --version 2>/dev/null | head -1) · agent dir $AGENT_DIR · $(uname -sm) · $( (( DEV )) && echo dev || echo repo) mode · ext: ${EXT:-none}"
+say "Pi $(pi --version 2>/dev/null | head -1) · agent dir $AGENT_DIR · $(uname -sm) · $( (( DEV )) && echo dev || echo repo) mode${RELEASE:+ · release $RELEASE} · ext: ${EXT:-none}"
 backup "$AGENT_DIR/settings.json"
 
 # 1. This setup package. Dev mode points Pi at the checkout; repo mode installs from GitHub.
@@ -269,6 +277,17 @@ command -v gh >/dev/null || missing="$missing
   gh             file-pr, babysit-pr: https://cli.github.com, then gh auth login"
 if [[ -n "$missing" ]]; then
   say "Optional tools not found (the skills that use them won't work until installed):$missing"
+fi
+
+# On a release, point out a newer one. Best effort: offline or no tags just skips it.
+if [[ -n "$RELEASE" ]]; then
+  latest="$(git -C "$REPO_DIR" ls-remote --tags --refs origin 'v*' 2>/dev/null | sed 's|.*refs/tags/||' \
+    | node -e 'const t=require("fs").readFileSync(0,"utf8").split(/\s+/).filter(v=>/^v\d+\.\d+\.\d+$/.test(v));
+      const n=v=>v.slice(1).split(".").map(Number); t.sort((a,b)=>{const x=n(a),y=n(b);return x[0]-y[0]||x[1]-y[1]||x[2]-y[2]});
+      process.stdout.write(t.pop()??"")' 2>/dev/null || true)"
+  if [[ -n "$latest" && "$latest" != "$RELEASE" ]]; then
+    say "Release $latest is available (you're on $RELEASE). Upgrade: git fetch --tags && git checkout $latest && ./setup.sh"
+  fi
 fi
 
 [[ -d "$BACKUP_DIR" ]] && say "Backups: $BACKUP_DIR"

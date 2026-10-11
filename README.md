@@ -10,8 +10,13 @@ package, so each machine builds its own native dependencies (macOS arm64 and Lin
 ```bash
 curl -fsSL https://pi.dev/install.sh | sh     # or: npm i -g --ignore-scripts @earendil-works/pi-coding-agent
 git clone https://github.com/andhikapraa/pi-setup-public ~/.pi/setup
-~/.pi/setup/setup.sh
+cd ~/.pi/setup && git checkout "$(git describe --tags --abbrev=0)"   # latest release; skip to track main
+./setup.sh
 ```
+
+On a release tag, setup installs the package pinned to that tag, so `pi update` leaves it alone
+and your setup changes only when you choose. Without the checkout line you follow `main` and get
+every change on the next `pi update`.
 
 In a terminal, setup lists the exts and asks which to enable. To choose without the prompt:
 
@@ -27,8 +32,14 @@ Rerun with a different `--ext` list to add or remove exts; setup remembers the l
 `~/.pi/agent/backups/pi-setup-<time>/`, keeps existing config files, and merges settings
 instead of replacing them.
 
-Update later with `pi update git:github.com/andhikapraa/pi-setup-public`, or
-`cd ~/.pi/setup && git pull && ./setup.sh` when package lists changed.
+**Updating.** On a release, rerunning `setup.sh` tells you when a newer one exists. Upgrade with:
+
+```bash
+cd ~/.pi/setup && git fetch --tags && git checkout <new-tag> && ./setup.sh
+```
+
+Following `main`: `cd ~/.pi/setup && git pull && ./setup.sh` (or `pi update --extensions` when
+only skills or extensions changed). Release notes: [Releases](https://github.com/andhikapraa/pi-setup-public/releases).
 
 ## Core
 
