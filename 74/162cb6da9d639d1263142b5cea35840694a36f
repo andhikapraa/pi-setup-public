@@ -1,0 +1,25 @@
+README.md
+  s_0257ce58512ec4::t_bddcbbc17978b1 3,76
+THIRD_PARTY.md
+  s_0257ce58512ec4::t_19296523ce4ec6 10
+ext/omp-ui/ABOUT
+  s_0257ce58512ec4::t_45ca3bd1e42739 1
+skills/do/SKILL.md
+  s_0257ce58512ec4::t_6bc12bd574436d 74
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "74162cb6da9d639d1263142b5cea35840694a36f",
+  "prompts": {},
+  "sessions": {
+    "s_0257ce58512ec4": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "01a12628-ebf5-7336-b8da-9de622ec23bf",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Muhammad Andhika Prasetya <andhikapraa@gmail.com>"
+    }
+  }
+}
