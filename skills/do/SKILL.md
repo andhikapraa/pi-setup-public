@@ -71,7 +71,7 @@ worker   single approved implementation ticket
 reviewer read-only adversarial verification
 ```
 
-Activate the subagent tool only when delegation is authorized by the request, the approved program, or this workflow. Inside T3 Code (when `mcp__t3-code__*` tools are available), dispatch tickets with `mcp__t3-code__delegate_task` instead, giving the role and bounded brief in the task prompt; Pi-native subagents are invisible in T3. Do not recursively delegate. Do not use arbitrary project-local agents without explicit trust and scope.
+Activate the subagent tool only when delegation is authorized by the request, the approved program, or this workflow. Do not recursively delegate. Do not use arbitrary project-local agents without explicit trust and scope.
 
 A worker may edit only its assigned target. A reviewer reads the integrated result and reports findings; it does not fix them. Prefer one worker per ticket, not one worker per file.
 

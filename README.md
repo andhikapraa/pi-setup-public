@@ -1,6 +1,6 @@
 # pi-setup
 
-A portable [Pi](https://pi.dev) setup: OMP-style extensions, coding workflow skills, subagent
+A portable [Pi](https://pi.dev) setup: oh-my-pi style compaction and commands, coding workflow skills, subagent
 definitions, and a curated set of Pi packages, with opt-in extras ("exts") for niche tools.
 Pi itself is installed the normal way; this repo installs everything on top of it as a Pi
 package, so each machine builds its own native dependencies (macOS arm64 and Linux x64 are tested).
@@ -36,9 +36,6 @@ Update later with `pi update git:github.com/andhikapraa/pi-setup-public`, or
 | `omp-compaction` | OMP-style `/compact [soft\|remote\|snapcompact] [focus]`, `/handoff [focus]`, `/shake [elide\|images\|thinking]`, and OMP's automatic compaction order. Ported from oh-my-pi 18.1.16 (MIT); see its `UPSTREAM.json`. |
 | `btw` | `/btw <question>`: side questions that reuse the main prompt cache and never enter the transcript. Bare `/btw` browses saved ones. |
 | `retry` | `/retry` resumes a failed or aborted turn; `/regen` reruns the last prompt (asks first if the turn changed files). |
-| `turn-stats` | OMP's per-reply usage row: time, Δ, input, output, cache read, time to first token, tokens/s. |
-| `input-bar` | OMP's powerline status bar and context gauge on the input box, edge to edge. Also opens the skill menu after a mid-prompt `/`. |
-| `multi-skills` | Type `/` mid-prompt to insert `/skill:name`; several skills per prompt. Vendored from pi-multi-skills 1.2.1 (MIT). |
 | `git-ai` | Records Pi edits in [git-ai](https://usegitai.com) checkpoints when git-ai is installed. |
 | `keyring-env` | Loads keys that extensions read from env vars (pi-exa's `EXA_API_KEY`) from the OS keyring into Pi's own process, so they work however Pi is launched. |
 | `agents-md` | Adds this setup's `AGENTS.md` (working rules: keep changes small, questions are read-only, ask before external or destructive actions, no secrets in files) to every session. Your own `~/.pi/agent/AGENTS.md` and project `AGENTS.md` files load after it and win where they differ. Disable it with `pi config` if you'd rather not have it. |
@@ -76,6 +73,7 @@ Each `ext/<name>/` can hold skills, extensions, and a pinned `packages.txt`.
 |---|---|---|
 | `axon` | [AxonHub](https://github.com/looplj/axonhub) model provider and `/axon-*` commands | Your own AxonHub server and member key |
 | `hindsight` | [Hindsight](https://github.com/andhikapraa/pi-hindsight) long-term memory across sessions | A Hindsight server |
+| `omp-ui` | [oh-my-pi](https://github.com/can1357/oh-my-pi) style UI: powerline input bar with context gauge, a usage row under each reply (time, tokens, cache, tokens/s), and a `/skill:name` menu anywhere in the prompt. Replaces Pi's default input box | |
 | `frontend` | `impeccable`, Vercel React skills, `web-perf`, and impeccable's post-edit UI check | |
 | `cloudflare` | `wrangler` | |
 | `google` | `gcloud`, Google developer docs lookup, Google skill finder | |

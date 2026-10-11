@@ -7,7 +7,7 @@ Everything else in this repository is under the root `LICENSE`.
 | Path | Upstream | License |
 |---|---|---|
 | `extensions/omp-compaction/` | [can1357/oh-my-pi](https://github.com/can1357/oh-my-pi) 18.1.16 | MIT |
-| `extensions/multi-skills/` | [QuangThai/pi-multi-skills](https://github.com/QuangThai/pi-multi-skills) 1.2.1 | MIT |
+| `ext/omp-ui/extensions/multi-skills/` | [QuangThai/pi-multi-skills](https://github.com/QuangThai/pi-multi-skills) 1.2.1 | MIT |
 | `skills/review/` | gstack (Garry Tan), with review axes from mattpocock/skills | MIT |
 | `skills/qa/` | gstack (Garry Tan) | MIT |
 | `skills/wayfinder/`, `skills/program/`, `skills/do/`, `skills/project-init/`, `skills/domain-modeling/`, `skills/make-plan/`, `skills/prototype/`, `skills/writing-for-agents/`, `skills/teach/` | [mattpocock/skills](https://github.com/mattpocock/skills) | MIT |

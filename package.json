@@ -16,10 +16,7 @@
       "./extensions/mcp-adapter-rpc.ts",
       "./extensions/btw.ts",
       "./extensions/retry.ts",
-      "./extensions/turn-stats.ts",
-      "./extensions/input-bar.ts",
       "./extensions/git-ai.ts",
-      "./extensions/multi-skills/index.ts",
       "./extensions/omp-compaction/index.ts"
     ],
     "skills": ["./skills"],
