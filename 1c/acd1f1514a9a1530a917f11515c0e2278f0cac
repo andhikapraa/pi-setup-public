@@ -1,0 +1,27 @@
+AGENTS.md
+  s_0257ce58512ec4::t_7a33bdde59afd6 1-109
+README.md
+  s_0257ce58512ec4::t_cfd0339326d015 44,52-65
+extensions/agents-md.ts
+  s_0257ce58512ec4::t_f168605455e815 1-23
+package.json
+  s_0257ce58512ec4::t_1e0db61e1db87a 14
+setup.sh
+  s_0257ce58512ec4::t_4a588fac2a1c78 264-273
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "1cacd1f1514a9a1530a917f11515c0e2278f0cac",
+  "prompts": {},
+  "sessions": {
+    "s_0257ce58512ec4": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "01a12628-ebf5-7336-b8da-9de622ec23bf",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Muhammad Andhika Prasetya <andhikapraa@gmail.com>"
+    }
+  }
+}
