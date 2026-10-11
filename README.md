@@ -41,12 +41,27 @@ Update later with `pi update git:github.com/andhikapraa/pi-setup-public`, or
 | `multi-skills` | Type `/` mid-prompt to insert `/skill:name`; several skills per prompt. Vendored from pi-multi-skills 1.2.1 (MIT). |
 | `git-ai` | Records Pi edits in [git-ai](https://usegitai.com) checkpoints when git-ai is installed. |
 | `keyring-env` | Loads keys that extensions read from env vars (pi-exa's `EXA_API_KEY`) from the OS keyring into Pi's own process, so they work however Pi is launched. |
+| `agents-md` | Adds this setup's `AGENTS.md` (working rules: keep changes small, questions are read-only, ask before external or destructive actions, no secrets in files) to every session. Your own `~/.pi/agent/AGENTS.md` and project `AGENTS.md` files load after it and win where they differ. Disable it with `pi config` if you'd rather not have it. |
 | `mcp-adapter-rpc` | Loads pi-mcp-adapter so its project-server approval prompt can't block Pi's startup in RPC mode. Without this, Pi exits with code 0 in projects whose `.mcp.json` has unapproved servers. |
 
 **Skills** (`skills/`): `review`, `qa`, `smart-explore`, `learn-codebase`, `make-plan`,
 `prototype`, `file-pr`, `babysit-pr`, `web-research`, `browser-automation`, `writing-for-agents`,
 `domain-modeling`, `no-ai-slop`, the planning set (`wayfinder`, `program`, `do`, `project-init`,
 `teach`), and `html-communication` / `postplan-read` for shareable [Postplan](https://www.npmjs.com/package/postplan) HTML.
+
+Most skills need nothing beyond Pi and the core packages. These need an outside tool or account,
+which setup does not install:
+
+| Skill | Needs | Without it |
+|---|---|---|
+| `browser-automation` | [agent-browser](https://agent-browser.dev) (`brew install agent-browser` or `npm i -g agent-browser`); [chrome-use](https://github.com/leeguooooo/chrome-use) only for CAPTCHA or your real Chrome session | No browser work |
+| `qa`, and `web-perf` (frontend ext) | `browser-automation` and its tools above | `qa` can't drive the app; `web-perf` still runs Lighthouse if the project has it |
+| `file-pr`, `babysit-pr` | [GitHub CLI](https://cli.github.com) (`gh`), signed in with `gh auth login` | Can't read or open PRs |
+| `html-communication` | A Postplan account: `npx postplan auth login` once | Can write the HTML, can't upload it |
+| `web-research` | An Exa API key (see Credentials); uses Context7 and the `firecrawl` ext too when present | Falls back to Context7 and direct reads |
+
+Skills that use an ext (for example `prototype` uses `impeccable` from `frontend`) say so and
+work without it.
 
 **Subagents** (`agents/`): `scout`, `worker`, `reviewer` for pi-subagents.
 

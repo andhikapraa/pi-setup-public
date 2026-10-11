@@ -11,6 +11,7 @@
   },
   "pi": {
     "extensions": [
+      "./extensions/agents-md.ts",
       "./extensions/keyring-env.ts",
       "./extensions/mcp-adapter-rpc.ts",
       "./extensions/btw.ts",

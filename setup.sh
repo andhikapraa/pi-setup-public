@@ -261,5 +261,15 @@ const [file, ...ext] = process.argv.slice(2);
 fs.writeFileSync(file, JSON.stringify({ ext }, null, 2) + "\n");
 EOF
 
+# Outside tools some skills use. Setup never installs them; it only points them out.
+missing=""
+command -v agent-browser >/dev/null || missing="$missing
+  agent-browser  browser-automation, qa (and web-perf): brew install agent-browser, or npm i -g agent-browser"
+command -v gh >/dev/null || missing="$missing
+  gh             file-pr, babysit-pr: https://cli.github.com, then gh auth login"
+if [[ -n "$missing" ]]; then
+  say "Optional tools not found (the skills that use them won't work until installed):$missing"
+fi
+
 [[ -d "$BACKUP_DIR" ]] && say "Backups: $BACKUP_DIR"
 say "Done. Remaining manual steps (see README): sign in with /login, and store keys in the OS keyring."
