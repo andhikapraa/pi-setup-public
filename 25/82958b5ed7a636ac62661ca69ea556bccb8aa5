@@ -1,0 +1,35 @@
+ext/context-mode/ABOUT
+  s_afca8ca8809005::t_60b55cb91f20ac 1
+ext/context-mode/packages.txt
+  s_afca8ca8809005::t_13ae39497b85b7 1-2
+skills/postplan-read/SKILL.md
+  s_0257ce58512ec4::t_d4c9b1d2623cc4 14,17,21
+skills/smart-explore/SKILL.md
+  s_0257ce58512ec4::t_9e3f549069f138 16,25
+skills/web-research/SKILL.md
+  s_0257ce58512ec4::t_aac732430fa999 18
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "2582958b5ed7a636ac62661ca69ea556bccb8aa5",
+  "prompts": {},
+  "sessions": {
+    "s_0257ce58512ec4": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "01a12628-ebf5-7336-b8da-9de622ec23bf",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Muhammad Andhika Prasetya <andhikapraa@gmail.com>"
+    },
+    "s_afca8ca8809005": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "01a12880-c03e-76b2-95f9-69401e9a5176",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Muhammad Andhika Prasetya <andhikapraa@gmail.com>"
+    }
+  }
+}
