@@ -15,6 +15,7 @@
       "./extensions/keyring-env.ts",
       "./extensions/mcp-adapter-rpc.ts",
       "./extensions/btw.ts",
+      "./extensions/ask-question.ts",
       "./extensions/retry.ts",
       "./extensions/git-ai.ts",
       "./extensions/omp-compaction/index.ts"

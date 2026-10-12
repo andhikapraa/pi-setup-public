@@ -143,6 +143,11 @@ install_list() {
     pi install "$source"
   done < <(read_sources "$1")
 }
+# Packages this setup used to install and has since replaced; removing a line from packages.txt
+# doesn't uninstall it. @henryqw/pi-ask-question became extensions/ask-question.ts.
+for source in npm:@henryqw/pi-ask-question; do
+  pi remove "$source" >/dev/null 2>&1 && say "Removed retired package $source" || true
+done
 install_list "$REPO_DIR/packages.txt"
 for name in $EXT; do install_list "$REPO_DIR/ext/$name/packages.txt"; done
 

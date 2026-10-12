@@ -49,6 +49,7 @@ only skills or extensions changed). Release notes: [Releases](https://github.com
 |---|---|
 | `omp-compaction` | OMP-style `/compact [soft\|remote\|snapcompact] [focus]`, `/handoff [focus]`, `/shake [elide\|images\|thinking]`, and OMP's automatic compaction order. Ported from oh-my-pi 18.1.16 (MIT); see its `UPSTREAM.json`. |
 | `btw` | `/btw <question>`: side questions that reuse the main prompt cache and never enter the transcript. Bare `/btw` browses saved ones. |
+| `ask-question` | `ask_question` tool: one question with up to three options plus a custom answer. Works in the terminal and in RPC clients such as T3 Code. Adapted from @henryqw/pi-ask-question (MIT), which only ran in the terminal. |
 | `retry` | `/retry` resumes a failed or aborted turn; `/regen` reruns the last prompt (asks first if the turn changed files). |
 | `git-ai` | Records Pi edits in [git-ai](https://usegitai.com) checkpoints when git-ai is installed. |
 | `keyring-env` | Loads keys that tools read from env vars (pi-exa's `EXA_API_KEY`, the dokploy ext's `DOKPLOY_INSTANCES`) from the OS keyring into Pi's own process, so they work however Pi is launched. |
@@ -79,8 +80,8 @@ target), and `reviewer` (read-only review) for pi-subagents. The `do` skill disp
 never spawn further subagents. `config/subagent-config.json` caps a parallel run at 8 tasks, 3 at a
 time, and is written only if you have no subagent config yet.
 
-**Packages** (`packages.txt`, pinned): pi-exa, context7, pi-ask-question,
-pi-subagents, pi-mcp-adapter.
+**Packages** (`packages.txt`, pinned): pi-exa, context7, pi-subagents,
+pi-mcp-adapter.
 
 ## Exts
 
