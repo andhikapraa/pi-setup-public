@@ -1,6 +1,6 @@
 {
   "name": "pi-setup",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "description": "Portable Pi setup: OMP-style extensions (compaction, /btw, /retry, input bar, turn stats, mid-prompt skills), coding skills, and subagent definitions.",
   "keywords": ["pi-package"],
