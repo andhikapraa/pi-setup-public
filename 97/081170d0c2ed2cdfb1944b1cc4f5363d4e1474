@@ -1,0 +1,14 @@
+package.json
+  h_690cf8a536e111 3
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "97081170d0c2ed2cdfb1944b1cc4f5363d4e1474",
+  "prompts": {},
+  "humans": {
+    "h_690cf8a536e111": {
+      "author": "Muhammad Andhika Prasetya <andhikapraa@gmail.com>"
+    }
+  }
+}
