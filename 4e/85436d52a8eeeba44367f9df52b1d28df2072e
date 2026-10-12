@@ -1,0 +1,25 @@
+README.md
+  s_4784e5409c7ffa::t_b810c6efef9a23 52,83-84
+extensions/ask-question.ts
+  s_4784e5409c7ffa::t_b4de1c2f5b4582 1-96
+package.json
+  s_4784e5409c7ffa::t_973a3fce9737c1 18
+setup.sh
+  s_4784e5409c7ffa::t_765415e49e0d41 146-150
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "4e85436d52a8eeeba44367f9df52b1d28df2072e",
+  "prompts": {},
+  "sessions": {
+    "s_4784e5409c7ffa": {
+      "agent_id": {
+        "tool": "pi",
+        "id": "01a12f30-918c-7272-a616-2a52e3c4a3ea",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Muhammad Andhika Prasetya <andhikapraa@gmail.com>"
+    }
+  }
+}
