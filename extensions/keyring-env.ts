@@ -15,6 +15,8 @@ import type { ExtensionAPI } from "@earendil-works/pi-coding-agent";
  */
 const KEYS: ReadonlyArray<{ env: string; service: string }> = [
 	{ env: "EXA_API_KEY", service: "exa-api" },
+	// pi-firecrawl (firecrawl ext).
+	{ env: "FIRECRAWL_API_KEY", service: "firecrawl-api-key" },
 	// JSON array of {name, baseUrl, apiKey}: the dokploy CLI's multi-instance form (dokploy ext).
 	{ env: "DOKPLOY_INSTANCES", service: "dokploy-instances" },
 ];

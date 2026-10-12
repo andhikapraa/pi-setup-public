@@ -52,7 +52,7 @@ only skills or extensions changed). Release notes: [Releases](https://github.com
 | `ask-question` | `ask_question` tool: one question with up to three options plus a custom answer. Works in the terminal and in RPC clients such as T3 Code. Adapted from @henryqw/pi-ask-question (MIT), which only ran in the terminal. |
 | `retry` | `/retry` resumes a failed or aborted turn; `/regen` reruns the last prompt (asks first if the turn changed files). |
 | `git-ai` | Records Pi edits in [git-ai](https://usegitai.com) checkpoints when git-ai is installed. |
-| `keyring-env` | Loads keys that tools read from env vars (pi-exa's `EXA_API_KEY`, the dokploy ext's `DOKPLOY_INSTANCES`) from the OS keyring into Pi's own process, so they work however Pi is launched. |
+| `keyring-env` | Loads keys that tools read from env vars (pi-exa's `EXA_API_KEY`, the firecrawl ext's `FIRECRAWL_API_KEY`, the dokploy ext's `DOKPLOY_INSTANCES`) from the OS keyring into Pi's own process, so they work however Pi is launched. |
 | `agents-md` | Adds this setup's `AGENTS.md` (working rules: keep changes small, questions are read-only, ask before external or destructive actions, no secrets in files) to every session. Your own `~/.pi/agent/AGENTS.md` and project `AGENTS.md` files load after it and win where they differ. Disable it with `pi config` if you'd rather not have it. |
 | `mcp-adapter-rpc` | Loads pi-mcp-adapter so its project-server approval prompt can't block Pi's startup in RPC mode. Without this, Pi exits with code 0 in projects whose `.mcp.json` has unapproved servers. |
 
@@ -126,6 +126,10 @@ secret-tool store --label "Hindsight" service hindsight
 
 ### Ext configuration
 
+- **firecrawl:** store your Firecrawl API key in the keyring item `firecrawl-api-key`;
+  `keyring-env` exposes it to Pi as `FIRECRAWL_API_KEY`. macOS:
+  `security add-generic-password -s firecrawl-api-key -a "$USER" -w`; Linux:
+  `secret-tool store --label "Firecrawl" service firecrawl-api-key`.
 - **dokploy:** create a key in Dokploy under Settings → API Keys, then store your instances as one
   JSON array in the keyring item `dokploy-instances`; `keyring-env` exposes it to Pi as
   `DOKPLOY_INSTANCES`. The first entry is the default; name others with `--instance NAME`. For
